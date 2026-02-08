@@ -1,0 +1,49 @@
+{
+    "needs": {
+        "hunger": "Fome",
+        "energy": "Energia",
+        "hygiene": "Higiene",
+        "bladder": "Bexiga",
+        "social": "Social",
+        "fun": "Diversão",
+        "comfort": "Conforto"
+    },
+    "states": {
+        "healthy": "Saudável",
+        "warning": "Atenção",
+        "critical": "Crítico"
+    },
+    "notifications": {
+        "critical_title": "Atenção!",
+        "critical_hunger": "Você está com muita fome!",
+        "critical_energy": "Você está muito cansado!",
+        "critical_hygiene": "Você precisa de um banho!",
+        "critical_bladder": "Você precisa usar o banheiro!",
+        "critical_social": "Você está se sentindo solitário!",
+        "critical_fun": "Você precisa se divertir!",
+        "critical_comfort": "Você precisa descansar!",
+        "want_completed": "Desejo Realizado!",
+        "action_cancelled": "Ação cancelada",
+        "feel_better": "Você se sente melhor!",
+        "cooldown": "Aguarde {seconds} segundos",
+        "no_money": "Você precisa de ${amount}",
+        "not_available": "Você não pode usar isso"
+    },
+    "hud": {
+        "title": "Necessidades",
+        "visible": "HUD visível",
+        "hidden": "HUD oculta"
+    },
+    "interactions": {
+        "using_bathroom": "Usando o banheiro...",
+        "using_urinal": "Usando o mictório...",
+        "taking_shower": "Tomando banho...",
+        "washing_hands": "Lavando as mãos...",
+        "resting": "Descansando...",
+        "relaxing": "Relaxando...",
+        "watching_tv": "Assistindo TV...",
+        "playing_arcade": "Jogando arcade...",
+        "buying_snack": "Comprando lanche...",
+        "drinking_coffee": "Tomando café..."
+    }
+}

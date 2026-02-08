@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LIQUID GLASS DESIGN SYSTEM - SimLife Needs HUD
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+    /* Glass Color Tokens */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-bg-hover: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-border-highlight: rgba(255, 255, 255, 0.4);
+    --glass-shadow-outer: rgba(0, 0, 0, 0.25);
+    --glass-shadow-inner: rgba(255, 255, 255, 0.05);
+
+    /* Blur Levels */
+    --blur-light: 8px;
+    --blur-medium: 16px;
+    --blur-heavy: 24px;
+
+    /* Need Colors with Vibrancy */
+    --need-hunger: #4ade80;
+    --need-energy: #60a5fa;
+    --need-hygiene: #34d399;
+    --need-bladder: #a78bfa;
+    --need-social: #fb923c;
+    --need-fun: #f472b6;
+    --need-comfort: #22d3ee;
+
+    --state-warning: #facc15;
+    --state-critical: #f87171;
+}
+
+/* Reset for NUI */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LIQUID GLASS CARD
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.liquid-glass {
+    /* Base Glass Layer - Lighter, more translucent */
+    background: rgba(0, 0, 0, 0.4);
+
+    /* Backdrop Blur - Reduced for better visibility */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Border with Top Specular Highlight */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    /* Layered Shadows for Depth */
+    box-shadow:
+        /* Outer shadow for "floating" effect */
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        /* Inner glow for luminosity */
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+    /* Soft Corners */
+    border-radius: 16px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   NEED BAR STYLING
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.need-bar-container {
+    position: relative;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    overflow: hidden;
+
+    /* Inner shadow for depth */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.need-bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    position: relative;
+
+    /* Glossy gradient overlay */
+    background-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, 0.1) 100%);
+
+    /* Smooth transitions */
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.need-bar-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 999px;
+    filter: blur(2px);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ICON CONTAINER - Glass Bubble
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.icon-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+
+    /* Subtle glass effect */
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* Soft shadow */
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Critical State Pulse - Gentle but Noticeable */
+@keyframes critical-glow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(248, 113, 113, 0),
+            0 8px 32px var(--glass-shadow-outer);
+    }
+
+    50% {
+        box-shadow:
+            0 0 20px 4px rgba(248, 113, 113, 0.3),
+            0 8px 32px var(--glass-shadow-outer);
+    }
+}
+
+.critical-pulse {
+    animation: critical-glow 2s ease-in-out infinite;
+}
+
+/* Icon Shake for Critical */
+@keyframes gentle-shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    75% {
+        transform: translateX(2px);
+    }
+}
+
+.icon-critical {
+    animation: gentle-shake 0.5s ease-in-out infinite;
+}
+
+/* Smooth Entry Animation */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.animate-slide-in {
+    animation: slide-in 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Bar Fill Animation */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.need-bar-shimmer {
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   UTILITY CLASSES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.pointer-events-auto {
+    pointer-events: auto;
+}
+
+/* Hide Scrollbars but Allow Scroll */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Text Styles */
+.text-glass {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-glass-muted {
+    color: rgba(255, 255, 255, 0.5);
+}
