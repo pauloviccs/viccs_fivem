@@ -15,6 +15,7 @@ function Database.LoadPlayerNeeds(citizenid)
         local row = result[1]
         return {
             hunger = row.hunger or 100.0,
+            thirst = row.thirst or 100.0,
             energy = row.energy or 100.0,
             hygiene = row.hygiene or 100.0,
             bladder = row.bladder or 100.0,
@@ -47,6 +48,7 @@ function Database.SavePlayerNeeds(citizenid, needs)
     local affectedRows = MySQL.update.await([[
         UPDATE player_needs SET
             hunger = ?,
+            thirst = ?,
             energy = ?,
             hygiene = ?,
             bladder = ?,
@@ -56,6 +58,7 @@ function Database.SavePlayerNeeds(citizenid, needs)
         WHERE citizenid = ?
     ]], {
         needs.hunger,
+        needs.thirst,
         needs.energy,
         needs.hygiene,
         needs.bladder,

@@ -8,6 +8,7 @@
 CREATE TABLE IF NOT EXISTS `player_needs` (
     `citizenid` VARCHAR(50) PRIMARY KEY,
     `hunger` FLOAT DEFAULT 100.0,
+    `thirst` FLOAT DEFAULT 100.0,
     `energy` FLOAT DEFAULT 100.0,
     `hygiene` FLOAT DEFAULT 100.0,
     `bladder` FLOAT DEFAULT 100.0,

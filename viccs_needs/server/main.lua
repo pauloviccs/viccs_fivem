@@ -154,11 +154,20 @@ RegisterNetEvent('viccs_needs:server:syncNeeds', function(clientNeeds)
     for needName, clientValue in pairs(clientNeeds) do
         if serverNeeds[needName] then
             -- Only allow client to decrease needs (decay)
-            -- Increases must come through restoreNeed event
+            -- Increases must come through restoreNeed event OR External Bridge
             if clientValue < serverNeeds[needName] then
                 serverNeeds[needName] = Utils.Clamp(clientValue, 0, 100)
             end
         end
+    end
+    
+    -- Sync back to QBX Metadata (so other scripts know we are hungry/thirsty)
+    if serverNeeds.hunger then
+        Player.Functions.SetMetaData('hunger', serverNeeds.hunger)
+    end
+    
+    if serverNeeds.thirst then
+        Player.Functions.SetMetaData('thirst', serverNeeds.thirst)
     end
 end)
 
@@ -199,6 +208,71 @@ lib.callback.register('viccs_needs:server:payForInteraction', function(source, a
     end
     
     return false
+end)
+
+-- ═══════════════════════════════════════════════════════════════════════════
+-- ADMIN COMMANDS
+-- ═══════════════════════════════════════════════════════════════════════════
+
+lib.addCommand('fullneeds', {
+    help = 'Preencher todas as necessidades (Admin)',
+    params = {
+        {
+            name = 'target',
+            type = 'playerId',
+            help = 'ID do jogador (Opcional)',
+            optional = true,
+        },
+    },
+    restricted = 'group.admin',
+}, function(source, args)
+    local targetSource = args.target or source
+    local targetPlayer = exports.qbx_core:GetPlayer(targetSource)
+
+    if not targetPlayer then
+        if source > 0 then
+            lib.notify(source, { title = 'Erro', description = 'Jogador não encontrado.', type = 'error' })
+        end
+        return
+    end
+
+    local citizenid = targetPlayer.PlayerData.citizenid
+    local needs = PlayerNeeds[citizenid]
+
+    if not needs then return end
+
+    -- Reset all configured needs to 100
+    for needName, _ in pairs(Config.Needs) do
+        needs[needName] = 100.0
+        
+        -- Sync metadata for core needs (Hunger/Thirst)
+        if needName == 'hunger' or needName == 'thirst' then
+            targetPlayer.Functions.SetMetaData(needName, 100)
+        end
+    end
+
+    -- Trigger client update (Uses initNeeds to refresh everything at once)
+    TriggerClientEvent('viccs_needs:client:initNeeds', targetSource, needs)
+    
+    -- Notify Admin
+    if source > 0 then 
+        lib.notify(source, {
+            title = 'SimLife Needs',
+            description = 'Necessidades restauradas para ' .. targetPlayer.PlayerData.charinfo.firstname,
+            type = 'success'
+        })
+    end
+    
+    -- Notify Target
+    if targetSource ~= source then
+        lib.notify(targetSource, {
+            title = 'SimLife Needs',
+            description = 'Suas necessidades foram restauradas pela administração.',
+            type = 'success'
+        })
+    end
+    
+    Utils.DebugPrint('Admin restored needs for', citizenid)
 end)
 
 -- ═══════════════════════════════════════════════════════════════════════════

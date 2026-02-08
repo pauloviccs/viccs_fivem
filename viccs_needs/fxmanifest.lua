@@ -28,6 +28,7 @@ client_scripts {
     'client/main.lua',
     'client/decay.lua',
     'client/hud.lua',
+    'client/vehicle.lua',
     'client/interactions.lua'
 }
 

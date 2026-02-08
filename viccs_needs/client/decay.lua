@@ -69,8 +69,9 @@ local function CalculateDecay(needName, currentValue, activity, deltaTime)
     local speedFactor = GetDecaySpeedFactor(currentValue)
     local activityMultiplier = GetActivityMultiplier(needName, activity)
     local socialMultiplier = GetSocialMultiplier(needName)
+    local globalMultiplier = Config.GlobalDecayMultiplier or 1.0
     
-    local totalDecay = baseRate * speedFactor * activityMultiplier * socialMultiplier * deltaTime
+    local totalDecay = baseRate * speedFactor * activityMultiplier * socialMultiplier * globalMultiplier * deltaTime
     
     return totalDecay
 end
@@ -83,7 +84,7 @@ local LastTickTime = GetGameTimer()
 
 CreateThread(function()
     -- Wait for initialization
-    while not exports.viccs_needs:GetNeeds() do
+    while not PlayerNeeds or not next(PlayerNeeds) do
         Wait(1000)
     end
     
@@ -95,8 +96,19 @@ CreateThread(function()
         local deltaMinutes = deltaMs / 60000 -- Convert to minutes
         LastTickTime = currentTime
         
-        local needs = exports.viccs_needs:GetNeeds()
-        if not needs then goto continue end
+        -- Use global PlayerNeeds directly (reference)
+        local needs = PlayerNeeds
+        if not needs then 
+            print('[Decay] PlayerNeeds is nil')
+            goto continue 
+        end
+        
+        -- DEBUG: Print needs count
+        if Config.Debug then
+            -- local count = 0
+            -- for _ in pairs(needs) do count = count + 1 end
+            -- print('[Decay] Tick. Needs count:', count, 'DeltaMin:', deltaMinutes)
+        end
         
         local activity = exports.viccs_needs:GetCurrentActivity()
         local needsUpdated = false
@@ -107,10 +119,14 @@ CreateThread(function()
             if decay > 0 then
                 local newValue = Utils.Clamp(currentValue - decay, 0, 100)
                 
-                -- Update local cache
+                -- Update directly
                 needs[needName] = newValue
                 needsUpdated = true
                 
+                if Config.Debug then
+                    print(string.format('[Decay] Updated %s: %.2f -> %.2f', needName, currentValue, newValue))
+                end
+
                 -- Check for critical state
                 local config = Config.Needs[needName]
                 if config then

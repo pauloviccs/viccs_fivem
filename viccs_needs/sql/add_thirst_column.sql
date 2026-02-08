@@ -1,0 +1,1 @@
+ALTER TABLE `player_needs` ADD COLUMN IF NOT EXISTS `thirst` FLOAT DEFAULT 100.0 AFTER `hunger`;

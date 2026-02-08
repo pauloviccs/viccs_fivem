@@ -58,6 +58,15 @@ export interface PlayerStats {
     armor: number;
 }
 
+export interface VehicleData {
+    speed: number;
+    fuel: number;
+    rpm: number;
+    gear: number;
+    engineHealth: number;
+    seatbelt: boolean;
+}
+
 // NUI message actions
 export type NUIAction =
     | 'INIT_NEEDS'
@@ -65,6 +74,8 @@ export type NUIAction =
     | 'UPDATE_NEED'
     | 'UPDATE_ALL_NEEDS'
     | 'UPDATE_STATUS'
+    | 'UPDATE_VEHICLE'
+    | 'TOGGLE_VEHICLE_HUD'
     | 'SYNC_WANTS'
     | 'WANT_COMPLETED'
     | 'TOGGLE_VISIBILITY'

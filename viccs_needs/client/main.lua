@@ -4,7 +4,7 @@
 ]]
 
 -- Local state
-local PlayerNeeds = {}
+PlayerNeeds = {} -- Global for resource scripts (decay.lua needs sync access)
 local PlayerWants = {}
 local IsInitialized = false
 local HudVisible = true
@@ -13,6 +13,8 @@ local CurrentActivity = Enums.ActivityState.IDLE
 -- ═══════════════════════════════════════════════════════════════════════════
 -- INITIALIZATION
 -- ═══════════════════════════════════════════════════════════════════════════
+
+print('[VICCS_NEEDS] client/main.lua loaded')
 
 ---Initialize needs from server
 RegisterNetEvent('viccs_needs:client:initNeeds', function(needs)
@@ -279,3 +281,56 @@ exports('GetNearbyPlayersCount', function()
 end)
 
 Utils.DebugPrint('Client main loaded')
+-- ═══════════════════════════════════════════════════════════════════════════
+-- BRIDGE & METADATA SYNC (Compatibilidade com ox_inventory/qbx_medical)
+-- ═══════════════════════════════════════════════════════════════════════════
+
+RegisterNetEvent('QBCore:Player:SetPlayerData', function(val)
+    if not PlayerNeeds or not next(PlayerNeeds) then return end
+    
+    if val.metadata then
+        -- Detect external increases (Eating/Drinking)
+        -- Only update local if external value is HIGHER (restoration)
+        -- Ignore lower values to prevent fighting with our decay
+        
+        if val.metadata.hunger and PlayerNeeds.hunger and val.metadata.hunger > PlayerNeeds.hunger then
+            PlayerNeeds.hunger = val.metadata.hunger
+            if Config.Debug then print('[Bridge] Synced Hunger from QBX:', val.metadata.hunger) end
+        end
+        
+        if val.metadata.thirst and PlayerNeeds.thirst and val.metadata.thirst > PlayerNeeds.thirst then
+            PlayerNeeds.thirst = val.metadata.thirst
+            if Config.Debug then print('[Bridge] Synced Thirst from QBX:', val.metadata.thirst) end
+        end
+    end
+end)
+
+-- Initial Sync on Load
+RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+    local PlayerData = exports.qbx_core:GetPlayerData()
+    if PlayerData.metadata then
+        if PlayerData.metadata.hunger then PlayerNeeds.hunger = PlayerData.metadata.hunger end
+        if PlayerData.metadata.thirst then PlayerNeeds.thirst = PlayerData.metadata.thirst end
+    end
+end)
+
+-- Loop to send Health/Armor to NUI
+CreateThread(function()
+    while true do
+        Wait(500) -- Update Health HUD every 500ms
+        
+        if HudVisible then
+            local ped = PlayerPedId()
+            local data = {
+                health = GetEntityHealth(ped) - 100, -- GTA health is 100-200 usually
+                armor = GetPedArmour(ped)
+            }
+            if data.health < 0 then data.health = 0 end
+            
+            SendNUIMessage({
+                action = 'UPDATE_STATUS',
+                data = data
+            })
+        end
+    end
+end)

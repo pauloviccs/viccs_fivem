@@ -13,16 +13,20 @@ Config = {}
 -- NEEDS CONFIGURATION
 -- ═══════════════════════════════════════════════════════════════════════════
 
+-- Global Decay Multiplier (0.5 = half speed, 2.0 = double speed)
+-- Use this to tune the entire system speed without changing individual values.
+Config.GlobalDecayMultiplier = 0.5
+
 Config.Needs = {
     hunger = {
         label = 'Fome',
         icon = 'utensils',
         color = { healthy = '#4ade80', warning = '#facc15', critical = '#f87171' },
-        decayRate = 0.8,        -- % por minuto em condições normais
+        decayRate = 0.5,        -- Base: 0.5% per minute (approx 3.3h to empty)
         decayMultipliers = {
-            running = 1.5,       -- Correndo
-            working = 1.2,       -- Trabalhando
-            sleeping = 0.3       -- Dormindo
+            running = 1.5,
+            working = 1.2,
+            sleeping = 0.1      -- Almost no hunger while sleeping
         },
         criticalThreshold = 20,
         warningThreshold = 40
@@ -32,11 +36,12 @@ Config.Needs = {
         label = 'Energia',
         icon = 'bolt',
         color = { healthy = '#60a5fa', warning = '#facc15', critical = '#f87171' },
-        decayRate = 0.5,
+        decayRate = 0.3,        -- Base: 0.3% per minute (approx 5.5h awake)
         decayMultipliers = {
             running = 2.0,
-            working = 1.3,
-            idle = 0.8
+            working = 1.5,
+            idle = 0.8,
+            driving = 1.1
         },
         criticalThreshold = 15,
         warningThreshold = 35
@@ -46,35 +51,51 @@ Config.Needs = {
         label = 'Higiene',
         icon = 'shower',
         color = { healthy = '#34d399', warning = '#facc15', critical = '#f87171' },
-        decayRate = 0.3,
+        decayRate = 0.2,        -- Base: 0.2% per minute (approx 8.3h to dirty)
         decayMultipliers = {
-            running = 1.8,
-            working = 1.1
+            running = 2.5,      -- Sweating makes you dirty fast
+            working = 1.5,
+            gym = 3.0           -- Exercise (if added later)
         },
         criticalThreshold = 25,
         warningThreshold = 45
+    },
+
+    thirst = {
+        label = 'Sede',
+        icon = 'glass-water',
+        color = { healthy = '#60a5fa', warning = '#facc15', critical = '#f87171' },
+        decayRate = 0.6,        -- Base: 0.6% per minute (~2.7h)
+        decayMultipliers = {
+            running = 2.0,
+            working = 1.5,
+            driving = 1.1
+        },
+        criticalThreshold = 15,
+        warningThreshold = 35
     },
     
     bladder = {
         label = 'Bexiga',
         icon = 'droplet',
         color = { healthy = '#a78bfa', warning = '#facc15', critical = '#f87171' },
-        decayRate = 1.0,
+        decayRate = 0.6,        -- Base: 0.6% per minute (2.7h)
         decayMultipliers = {
-            drinking = 2.0
+            drinking = 2.5,
+            nervous = 1.5
         },
-        criticalThreshold = 10,
-        warningThreshold = 30
+        criticalThreshold = 15,
+        warningThreshold = 35
     },
     
     social = {
         label = 'Social',
         icon = 'users',
         color = { healthy = '#fb923c', warning = '#facc15', critical = '#f87171' },
-        decayRate = 0.15,
+        decayRate = 0.25,       -- Base: 0.25% per minute
         decayMultipliers = {
-            alone = 1.5,
-            nearPlayers = 0.5
+            alone = 1.2,
+            nearPlayers = 0.0   -- Stops decaying near people
         },
         criticalThreshold = 20,
         warningThreshold = 40
@@ -84,10 +105,11 @@ Config.Needs = {
         label = 'Diversão',
         icon = 'gamepad-2',
         color = { healthy = '#f472b6', warning = '#facc15', critical = '#f87171' },
-        decayRate = 0.4,
+        decayRate = 0.3,        -- Base: 0.3% per minute
         decayMultipliers = {
-            working = 1.5,
-            idle = 1.2
+            working = 1.8,      -- Work is boring
+            idle = 1.0,
+            playing = 0.0
         },
         criticalThreshold = 25,
         warningThreshold = 45
@@ -97,11 +119,11 @@ Config.Needs = {
         label = 'Conforto',
         icon = 'sofa',
         color = { healthy = '#22d3ee', warning = '#facc15', critical = '#f87171' },
-        decayRate = 0.2,
+        decayRate = 0.4,        -- Base: 0.4% per minute
         decayMultipliers = {
-            standing = 1.3,
-            sitting = 0.5,
-            sleeping = 0.1
+            standing = 1.5,     -- Standing reduces comfort
+            sitting = -0.5,     -- Sitting RESTORES comfort (negative decay)
+            sleeping = -1.0     -- Sleeping restores comfort fast
         },
         criticalThreshold = 20,
         warningThreshold = 40
@@ -230,7 +252,11 @@ Config.HUD = {
         enabled = true,
         duration = 1500,  -- ms
         intensity = 0.3   -- 0-1
-    }
+    },
+    
+    -- Health & Armor (Barra de Vida/Colete - Sem decay)
+    showHealth = true,
+    showArmor = true
 }
 
 -- ═══════════════════════════════════════════════════════════════════════════
@@ -518,4 +544,4 @@ Config.DecayTickInterval = 10000    -- ms (10 segundos)
 -- DEBUG
 -- ═══════════════════════════════════════════════════════════════════════════
 
-Config.Debug = false                -- Ativar logs de debug
+Config.Debug = true                -- Ativar logs de debug

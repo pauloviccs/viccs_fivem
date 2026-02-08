@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Need, NeedsConfig, Want, WantsCatalog } from './types';
+import type { Need, NeedsConfig, Want, WantsCatalog, VehicleData } from './types';
 
 interface NeedsStore {
     // State
@@ -11,12 +11,18 @@ interface NeedsStore {
     minimized: boolean;
     paused: boolean;
     stats: { health: number; armor: number };
+    vehicle: {
+        visible: boolean;
+        data: VehicleData;
+    };
 
     // Actions
     setNeeds: (needs: Record<string, Need>) => void;
     setConfig: (config: NeedsConfig) => void;
     updateNeed: (name: string, value: number, state: 'healthy' | 'warning' | 'critical') => void;
     updateStats: (health: number, armor: number) => void;
+    updateVehicle: (data: VehicleData) => void;
+    setVehicleVisible: (visible: boolean) => void;
     setWants: (wants: Want[]) => void;
     setWantsCatalog: (catalog: WantsCatalog) => void;
     setVisible: (visible: boolean) => void;
@@ -56,22 +62,31 @@ export const useNeedsStore = create<NeedsStore>((set) => ({
     paused: false,
 
     stats: { health: 100, armor: 0 },
-    updateStats: (health: number, armor: number) => set({ stats: { health, armor } }),
+    vehicle: {
+        visible: false,
+        data: {
+            speed: 0,
+            fuel: 100,
+            rpm: 0,
+            gear: 0,
+            engineHealth: 1000,
+            seatbelt: false
+        }
+    },
 
     setNeeds: (needs) => set({ needs }),
-
     setConfig: (config) => set({ config }),
-
     updateNeed: (name, value, state) =>
         set((prev) => ({
             needs: {
                 ...prev.needs,
-                [name]: { value, state },
+                [name]: { ...prev.needs[name], value, state },
             },
         })),
-
+    updateStats: (health, armor) => set({ stats: { health, armor } }),
+    updateVehicle: (data) => set((state) => ({ vehicle: { ...state.vehicle, data } })),
+    setVehicleVisible: (visible) => set((state) => ({ vehicle: { ...state.vehicle, visible } })),
     setWants: (wants) => set({ wants }),
-
     setWantsCatalog: (catalog) => set({ wantsCatalog: catalog }),
 
     setVisible: (visible) => set({ visible }),
