@@ -3,29 +3,67 @@ print('[VICCS_NEEDS] Loading client/vehicle.lua...')
 local seatbeltOn = false
 local cruiseOn = false
 
+-- Config defaults (km/h)
+local minSpeeds = {
+    unbuckled = 30.0,
+    buckled = 200.0
+}
+
+local function updateSeatbeltPhysics()
+    local limit = (seatbeltOn or LocalPlayer.state.harness) and minSpeeds.buckled or minSpeeds.unbuckled
+    -- SetFlyThroughWindscreenParams(minSpeed, epsilon, minDamage, minDuration)
+    -- Native expects Meters Per Second
+    SetFlyThroughWindscreenParams(limit / 3.6, 1.0, 17.0, 10.0)
+end
+
 -- Seatbelt Command
 RegisterCommand('seatbelt', function()
-    if not cache.vehicle then return end
+    local vehicle = cache.vehicle or GetVehiclePedIsIn(PlayerPedId(), false)
+    if not vehicle or vehicle == 0 then return end
     
+    local class = GetVehicleClass(vehicle)
+    if class == 8 or class == 13 or class == 14 then return end -- Bikes, Cycles, Boats
+
+    if LocalPlayer.state.harness then return end -- Harness overrides
+
     seatbeltOn = not seatbeltOn
-    -- Play sound?
-    -- TriggerEvent('interact-sound:client:PlayOnOne', seatbeltOn and 'buckle' or 'unbuckle', 0.5)
     
+    -- Update Physics
+    updateSeatbeltPhysics()
+    
+    -- Visual feedback
     lib.notify({
         title = 'Cinto de Segurança',
         description = seatbeltOn and 'Colocado' or 'Retirado',
         type = seatbeltOn and 'success' or 'warning'
     })
     
-    -- Ejection Logic handled here or external? 
-    -- For now, let's keep it simple visual. If user needs ejection logic, we can add.
-    -- Usually qbx_smallresources handles ejection. We just visualize.
-    -- But qbx_hud reads LocalPlayer.state.seatbelt. 
-    -- We can set it for compatibility.
+    -- Sync state for others/HUD
     LocalPlayer.state:set('seatbelt', seatbeltOn, true)
+    
+    -- Sound (Optional, if interact-sound is installed)
+    -- TriggerEvent('interact-sound:client:PlayOnOne', seatbeltOn and 'buckle' or 'unbuckle', 0.5)
 end, false)
 
 RegisterKeyMapping('seatbelt', 'Toggle Seatbelt', 'keyboard', 'B')
+
+-- Disable Vehicle Exit Loop (Immersive Constraint)
+CreateThread(function()
+    while true do
+        local sleep = 1000
+        if (seatbeltOn or LocalPlayer.state.harness) and (cache.vehicle or IsPedInAnyVehicle(PlayerPedId(), false)) then
+            sleep = 0
+            DisableControlAction(0, 75, true) -- EXIT_VEHICLE
+            DisableControlAction(27, 75, true) -- INPUT_VEH_EXIT
+        end
+        Wait(sleep)
+    end
+end)
+
+-- Initial Physics Setup
+CreateThread(function()
+    updateSeatbeltPhysics()
+end)
 
 -- HUD Loop
 CreateThread(function()
@@ -48,6 +86,12 @@ CreateThread(function()
             
             if not wasInVehicle then
                 wasInVehicle = true
+                
+                -- Reset seatbelt on new entry (Optional, but safer for logic state)
+                seatbeltOn = false
+                LocalPlayer.state:set('seatbelt', false, true)
+                updateSeatbeltPhysics()
+
                 SendNUIMessage({
                     action = 'TOGGLE_VEHICLE_HUD',
                     data = { visible = true }
@@ -77,6 +121,10 @@ CreateThread(function()
         else
             if wasInVehicle then
                 wasInVehicle = false
+                -- Reset seatbelt logic on exit
+                seatbeltOn = false
+                updateSeatbeltPhysics()
+
                 SendNUIMessage({
                     action = 'TOGGLE_VEHICLE_HUD',
                     data = { visible = false }
