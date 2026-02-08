@@ -8,6 +8,9 @@ import {
     Users,
     Gamepad2,
     Sofa,
+    GlassWater,
+    Heart,
+    Shield,
     type LucideIcon
 } from 'lucide-react';
 import type { Need, NeedConfig } from '../types';
@@ -21,6 +24,9 @@ const iconMap: Record<string, LucideIcon> = {
     users: Users,
     'gamepad-2': Gamepad2,
     sofa: Sofa,
+    'glass-water': GlassWater,
+    heart: Heart,
+    shield: Shield,
 };
 
 interface NeedBarProps {

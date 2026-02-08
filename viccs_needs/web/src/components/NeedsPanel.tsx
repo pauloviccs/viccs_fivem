@@ -3,10 +3,10 @@ import { useNeedsStore } from '../store';
 import { NeedBar } from './NeedBar';
 
 // Order of needs display (matches Sims 4 style)
-const needsOrder = ['hunger', 'energy', 'hygiene', 'bladder', 'social', 'fun', 'comfort'];
+const needsOrder = ['hunger', 'thirst', 'energy', 'hygiene', 'bladder', 'social', 'fun', 'comfort'];
 
 export function NeedsPanel() {
-    const { needs, config, visible, minimized, paused } = useNeedsStore();
+    const { needs, config, visible, minimized, paused, stats } = useNeedsStore();
 
     // Don't render if paused or not visible
     if (paused || !visible) return null;
@@ -44,6 +44,53 @@ export function NeedsPanel() {
             ${minimized ? 'opacity-70' : ''}
           `}
                 >
+                    {/* Health & Armor Stats */}
+                    <div className="flex flex-col gap-1.5 mb-3 border-b border-white/10 pb-3">
+                        {/* Health */}
+                        {stats && (
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                            >
+                                <NeedBar
+                                    need={{
+                                        value: stats.health,
+                                        state: stats.health < 25 ? 'critical' : stats.health < 50 ? 'warning' : 'healthy'
+                                    }}
+                                    config={{
+                                        label: 'Saúde',
+                                        icon: 'heart', // Defined in NeedBar iconMap
+                                        color: { healthy: '#ef4444', warning: '#ef4444', critical: '#991b1b' },
+                                        criticalThreshold: 25,
+                                        warningThreshold: 50
+                                    }}
+                                />
+                            </motion.div>
+                        )}
+
+                        {/* Armor (Only if > 0) */}
+                        {stats && stats.armor > 0 && (
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                            >
+                                <NeedBar
+                                    need={{
+                                        value: stats.armor,
+                                        state: 'healthy'
+                                    }}
+                                    config={{
+                                        label: 'Colete',
+                                        icon: 'shield',
+                                        color: { healthy: '#3b82f6', warning: '#3b82f6', critical: '#1e40af' },
+                                        criticalThreshold: 0,
+                                        warningThreshold: 0
+                                    }}
+                                />
+                            </motion.div>
+                        )}
+                    </div>
+
                     {/* Needs list */}
                     {hasNeeds ? (
                         <div className="flex flex-col gap-1.5">

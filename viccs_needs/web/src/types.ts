@@ -52,12 +52,19 @@ export interface WantCatalogItem {
 
 export type WantsCatalog = Record<string, WantCatalogItem>;
 
+// Player Stats (Health/Armor)
+export interface PlayerStats {
+    health: number;
+    armor: number;
+}
+
 // NUI message actions
 export type NUIAction =
     | 'INIT_NEEDS'
     | 'INIT_CONFIG'
     | 'UPDATE_NEED'
     | 'UPDATE_ALL_NEEDS'
+    | 'UPDATE_STATUS'
     | 'SYNC_WANTS'
     | 'WANT_COMPLETED'
     | 'TOGGLE_VISIBILITY'

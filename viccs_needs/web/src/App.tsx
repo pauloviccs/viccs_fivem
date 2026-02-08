@@ -8,6 +8,7 @@ function App() {
         setNeeds,
         setConfig,
         updateNeed,
+        updateStats,
         setWants,
         setWantsCatalog,
         setVisible,
@@ -71,6 +72,12 @@ function App() {
                         needs: Record<string, { value: number; state: 'healthy' | 'warning' | 'critical' }>
                     };
                     setNeeds(allData.needs);
+                    break;
+                }
+
+                case 'UPDATE_STATUS': {
+                    const statusData = data as { health: number; armor: number };
+                    updateStats(statusData.health, statusData.armor);
                     break;
                 }
 

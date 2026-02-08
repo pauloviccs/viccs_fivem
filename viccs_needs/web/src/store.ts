@@ -10,11 +10,13 @@ interface NeedsStore {
     visible: boolean;
     minimized: boolean;
     paused: boolean;
+    stats: { health: number; armor: number };
 
     // Actions
     setNeeds: (needs: Record<string, Need>) => void;
     setConfig: (config: NeedsConfig) => void;
     updateNeed: (name: string, value: number, state: 'healthy' | 'warning' | 'critical') => void;
+    updateStats: (health: number, armor: number) => void;
     setWants: (wants: Want[]) => void;
     setWantsCatalog: (catalog: WantsCatalog) => void;
     setVisible: (visible: boolean) => void;
@@ -52,6 +54,9 @@ export const useNeedsStore = create<NeedsStore>((set) => ({
     visible: true,
     minimized: false,
     paused: false,
+
+    stats: { health: 100, armor: 0 },
+    updateStats: (health: number, armor: number) => set({ stats: { health, armor } }),
 
     setNeeds: (needs) => set({ needs }),
 
