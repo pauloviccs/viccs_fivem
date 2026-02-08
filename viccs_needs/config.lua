@@ -15,7 +15,7 @@ Config = {}
 
 -- Global Decay Multiplier (0.5 = half speed, 2.0 = double speed)
 -- Use this to tune the entire system speed without changing individual values.
-Config.GlobalDecayMultiplier = 0.5
+Config.GlobalDecayMultiplier = 10.0
 
 Config.Needs = {
     hunger = {

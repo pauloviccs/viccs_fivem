@@ -1,6 +1,7 @@
 import { useEffect, useCallback } from 'react';
 import { NeedsPanel } from './components/NeedsPanel';
 import { VehicleHUD } from './components/VehicleHUD';
+import { WantsPanel } from './components/WantsPanel';
 import { useNeedsStore } from './store';
 import type { NUIMessage, NeedConfig } from './types';
 import './index.css';
@@ -129,10 +130,12 @@ function App() {
         return () => window.removeEventListener('message', handleMessage);
     }, [handleMessage]);
 
+
     return (
         <div className="w-screen h-screen relative overflow-hidden pointer-events-none select-none font-sans">
-            {/* Needs Panel - Bottom Right (handled by its own CSS/position) */}
-            <div className="absolute right-8 bottom-8 pointer-events-auto">
+            {/* Needs & Wants Container - Bottom Right */}
+            <div className="absolute right-8 bottom-8 pointer-events-auto flex flex-col items-end gap-6">
+                <WantsPanel />
                 <NeedsPanel />
             </div>
 

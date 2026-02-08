@@ -104,6 +104,20 @@ end
 -- WANTS MANAGEMENT
 -- ═══════════════════════════════════════════════════════════════════════════
 
+---Sync wants to player with config attached
+---@param source number Player server ID
+---@param citizenid string Player's citizen ID
+local function SyncPlayerWants(source, citizenid)
+    local activeWants = Database.LoadPlayerWants(citizenid)
+    
+    -- Attach config to each want so client has metadata
+    for _, want in ipairs(activeWants) do
+        want.config = Config.Wants.catalog[want.want_id]
+    end
+    
+    TriggerClientEvent('viccs_needs:client:syncWants', source, activeWants)
+end
+
 ---Generate new wants for player based on their current needs
 ---@param source number Player server ID
 ---@param citizenid string Player's citizen ID
@@ -145,8 +159,7 @@ RegisterNetEvent('viccs_needs:server:checkWants', function()
     
     -- Update active wants and sync to client
     if #newWants > 0 then
-        activeWants = Database.LoadPlayerWants(citizenid)
-        TriggerClientEvent('viccs_needs:client:syncWants', source, activeWants)
+        SyncPlayerWants(source, citizenid)
         
         Utils.DebugPrint('Generated', #newWants, 'new wants for', citizenid)
     end
@@ -177,11 +190,8 @@ RegisterNetEvent('viccs_needs:server:completeWant', function(wantId)
     -- Move want to history
     Database.CompleteWant(citizenid, wantId)
     
-    -- Get updated wants
-    local activeWants = Database.LoadPlayerWants(citizenid)
-    
     -- Sync to client
-    TriggerClientEvent('viccs_needs:client:syncWants', source, activeWants)
+    SyncPlayerWants(source, citizenid)
     TriggerClientEvent('viccs_needs:client:wantCompleted', source, wantId, wantConfig.moodBonus or 0)
     
     Utils.DebugPrint('Completed want', wantId, 'for', citizenid)
@@ -201,11 +211,8 @@ RegisterNetEvent('viccs_needs:server:dismissWant', function(wantId)
         { citizenid, wantId }
     )
     
-    -- Get updated wants
-    local activeWants = Database.LoadPlayerWants(citizenid)
-    
     -- Sync to client
-    TriggerClientEvent('viccs_needs:client:syncWants', source, activeWants)
+    SyncPlayerWants(source, citizenid)
     
     Utils.DebugPrint('Dismissed want', wantId, 'for', citizenid)
 end)
@@ -216,6 +223,10 @@ end)
 
 exports('TriggerWantCheck', function(source)
     TriggerEvent('viccs_needs:server:checkWants')
+end)
+
+exports('SyncWants', function(source, citizenid)
+    SyncPlayerWants(source, citizenid)
 end)
 
 exports('CompleteWant', function(citizenid, wantId)

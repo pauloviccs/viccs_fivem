@@ -39,6 +39,7 @@ export interface Want {
     priority: 'primary' | 'secondary';
     created_at?: string;
     expires_at?: string;
+    config: WantCatalogItem;
 }
 
 // Want catalog item

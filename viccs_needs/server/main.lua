@@ -36,7 +36,7 @@ local function InitializePlayer(source)
     
     -- Send to client
     TriggerClientEvent('viccs_needs:client:initNeeds', source, needs)
-    TriggerClientEvent('viccs_needs:client:syncWants', source, PlayerWants[citizenid])
+    exports.viccs_needs:SyncWants(source, citizenid)
     
     Utils.DebugPrint('Player initialized:', citizenid)
 end
