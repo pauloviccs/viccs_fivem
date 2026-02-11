@@ -12,8 +12,14 @@ local HudReady = false
 CreateThread(function()
     while true do
         Wait(0)
-        -- Hide the vanilla minimap/radar completely
-        DisplayRadar(false)
+        -- Hide the vanilla minimap/radar completely unless in vehicle
+        local ped = PlayerPedId()
+        if IsPedInAnyVehicle(ped, false) then
+            DisplayRadar(true)
+        else
+            DisplayRadar(false)
+        end
+        
         HideHudComponentThisFrame(6) -- Vehicle name
         HideHudComponentThisFrame(7) -- Area name
         HideHudComponentThisFrame(8) -- Vehicle class

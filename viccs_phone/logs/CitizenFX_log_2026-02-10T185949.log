@@ -1,0 +1,971 @@
+[       500] [    DumpServer]                29932/ DumpServer is active and waiting.
+[       500] [         FiveM]             MainThrd/ --- BEGIN LOGGING AT Tue Feb 10 18:59:49 2026 ---
+[       625] [         FiveM]             MainThrd/ hello from "C:\Games\FiveM\FiveM.exe" 
+[       640] [         FiveM]             MainThrd/ Got ros:legit process - pid 1732
+[       687] [   ROSLauncher]             MainThrd/ hello from "C:\Games\FiveM\FiveM.app\data\cache\subprocess\FiveM_ROSLauncher" ros:legit --parent_pid=30876 "C:\Program Files\Rockstar Games\Launcher\Launcher.exe" -noRecogniser
+[       765] [   ROSLauncher]             MainThrd/ legit! "C:\Games\FiveM\FiveM.app\data\cache\subprocess\FiveM_ROSLauncher" ros:legit --parent_pid=30876 "C:\Program Files\Rockstar Games\Launcher\Launcher.exe" -noRecogniser
+[       765] [   ROSLauncher]             MainThrd/ GameInstallInfo: 0 11 2
+[       765] [   ROSLauncher]             MainThrd/ InitROS: Steam
+[      1859] [   ROSLauncher]             MainThrd/ Launcher Status: Searching for the Rockstar Games Launcher
+[      1859] [   ROSLauncher]             MainThrd/ Looking for proc: "C:\\Program Files\\Rockstar Games\\Launcher\\Launcher.exe"
+[      1859] [   ROSLauncher]             MainThrd/ Launcher Status: Initializing the Rockstar Games Launcher
+[      1875] [   ROSLauncher]             MainThrd/ Launcher Status: Waiting on the Rockstar Games Launcher
+[      1875] [   ROSLauncher]             MainThrd/ Found launcher!
+[      1875] [   ROSLauncher]             MainThrd/ Launcher Status: Waiting on the Rockstar Games Launcher
+[      1875] [   ROSLauncher]             MainThrd/ Checking if it has socialclub.dll! Active? 1
+[     12609] [   ROSLauncher]             MainThrd/ MTL says it's signed in: p4ulera4@gmail.com
+[     12609] [   ROSLauncher]             MainThrd/ Account id 117076532
+[     13062] [         FiveM]             MainThrd/ Got ros:launcher process - pid 396
+[     13109] [   ROSLauncher]             MainThrd/ hello from "C:\Games\FiveM\FiveM.app\data\cache\subprocess\FiveM_ROSLauncher" ros:launcher --parent_pid=30876 "C:\Program Files\Rockstar Games\Launcher\Launcher.exe" -noRecogniser
+[     13203] [   ROSLauncher]             MainThrd/ launcher! "C:\Games\FiveM\FiveM.app\data\cache\subprocess\FiveM_ROSLauncher" ros:launcher --parent_pid=30876 "C:\Program Files\Rockstar Games\Launcher\Launcher.exe" -noRecogniser
+[     13328] [   ROSLauncher]             MainThrd/ Replacing function table list entry 0x7ff7dcb0e000 with 0x7ff7dcb0e000
+[     13547] [   ROSLauncher]                10008/ Got ROS service - pid 22360
+[     13578] [    ROSService]             MainThrd/ hello from "C:\Games\FiveM\FiveM.app\data\cache\subprocess\FiveM_ROSService" ros:service
+[     13672] [    ROSService]             MainThrd/ service! "C:\Games\FiveM\FiveM.app\data\cache\subprocess\FiveM_ROSService" ros:service
+[     13687] [    ROSService]             MainThrd/ Replacing function table list entry 0x7ff768442000 with 0x7ff768442000
+[     13765] [    ROSService]             MainThrd/ SetServiceStatus: 4
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetLauncherVersions -> {"launcher":"1.0.53.576","socialclub":"2.0.9.0"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetSettings -> {"machine":{"global":{"defaultInstallationPath":"","defaultLanguage":"","lastSysInfoSendDate":1770737625,"maxPath":70,"maxPathW":70},"titles":{"lanoire":{"adapter":"Default","ambientOcclusion":"YES","anisotropicFiltering":1,"antialiasing":0,"environmentMap":"Quality","facialQuality":"Quality","fullScreen":"NO","interfaceSize":"Normal","keyboard":"US","language":"English","lightingQuality":"Quality","lodQuality":"Quality","renderer":"DirectX 11","resolution":"1280x720x60","shadowQuality":"Quality","textureQuality":"Quality","threading":"Multi"},"lanoirevr":{"adapter":"Default","ambientOcclusion":"NO","anisotropicFiltering":1,"antialiasing":1,"environmentMap":"Quality","facialQuality":"Quality","fullScreen":"NO","interfaceSize":"Normal","keyboard":"US","language":"English","languageSet":"NO","lightingQuality":"Quality","lodQuality":"Quality","renderer":"DirectX 11","resolution":"1280x720x60","resolutionMultiplier":1.0,"shadowQuality":"Balanced","ssaoQuality":"Balanced","textureQuality":"Quality","threading":"Multi","videoHwDecoding":"NO"}}},"rockstarUser":{"global":{"notifications":{"all":true,"download":true,"friends":true,"game":true,"launcher":true,"scui":true}},"titles":{"bully":{"autoUpdate":true},"gta3":{"autoUpdate":true},"gta5":{"autoUpdate":true},"gtasa":{"autoUpdate":true},"gtavc":{"autoUpdate":true},"lanoire":{"autoUpdate":true,"commandLine":""},"lanoirevr":{"commandLine":""},"mp3":{"autoUpdate":true},"rdr2":{"autoUpdate":true},"rdr2_rdo":{"autoUpdate":true},"rdr2_sp":{"autoUpdate":true},"rdr2_sp_rgl":{"autoUpdate":true}}},"windowsUser":{"externalLaunch":{"requested":{"language":""}},"global":{"allowGamePad":true,"backgroundDownloadThrottle":1048576,"backgroundDownloadThrottleEnabled":false,"hibernateOnGameLaunch":false,"inGameDownloadEnabled":false,"inGameDownloadThrottle":1048576,"inGameDownloadThrottleEnabled":false,"language":"pt-PT","mainWindow":{"fixedres":1,"h":0,"maximize":false,"w":0,"x":0,"y":0},"minimizeOnClose":false,"preloadThrottle":524288,"preloadThrottleEnabled":true,"preloadingEnabled":true,"shownMinimizingToTrayMessage":false,"startWithWindows":false}}}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetFullMode -> {}
+[     14047] [   ROSLauncher]                26780/ SC JS message: NotifyDiskSpace -> {"C:":{"freeBytes":91323678720,"totalBytes":999216377856}}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto III","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta3"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta5"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtavc) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: Vice City","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtavc"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp_rgl) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp_rgl"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (mp3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Max Payne 3: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"mp3"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (bully) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Bully: Scholarship Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pl-PL","ru-RU","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"bully"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtasa) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: San Andreas","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtasa"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2) -> {"branches":[{"branchName":12,"friendlyName":"default","isDefault":true}],"currentBranch":12,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"Red Dead Redemption 2","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_rdo) -> {"branches":[{"branchName":14,"friendlyName":"default","isDefault":true}],"currentBranch":14,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_rdo"}
+[     14047] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoire) -> {"batchEnd":true,"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","ru-RU"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoire"}
+[     14328] [   ROSLauncher]                26780/ SC JS message: SetSettings -> {"machine":{"global":{"defaultInstallationPath":"","defaultLanguage":"","lastSysInfoSendDate":1770737625,"maxPath":0,"maxPathW":0},"titles":{"lanoire":{"adapter":"Default","ambientOcclusion":"YES","anisotropicFiltering":1,"antialiasing":0,"environmentMap":"Quality","facialQuality":"Quality","fullScreen":"NO","interfaceSize":"Normal","keyboard":"US","language":"English","lightingQuality":"Quality","lodQuality":"Quality","renderer":"DirectX 11","resolution":"1280x720x60","shadowQuality":"Quality","textureQuality":"Quality","threading":"Multi"},"lanoirevr":{"adapter":"Default","ambientOcclusion":"NO","anisotropicFiltering":1,"antialiasing":1,"environmentMap":"Quality","facialQuality":"Quality","fullScreen":"NO","interfaceSize":"Normal","keyboard":"US","language":"English","languageSet":"NO","lightingQuality":"Quality","lodQuality":"Quality","renderer":"DirectX 11","resolution":"1280x720x60","resolutionMultiplier":1.0,"shadowQuality":"Balanced","ssaoQuality":"Balanced","textureQuality":"Quality","threading":"Multi","videoHwDecoding":"NO"}}},"rockstarUser":{"global":{"notifications":{"all":true,"download":true,"friends":true,"game":true,"launcher":true,"scui":true}},"titles":{"bully":{"autoUpdate":true},"gta3":{"autoUpdate":true},"gta5":{"autoUpdate":true},"gtasa":{"autoUpdate":true},"gtavc":{"autoUpdate":true},"lanoire":{"autoUpdate":true,"commandLine":""},"lanoirevr":{"commandLine":""},"mp3":{"autoUpdate":true},"rdr2":{"autoUpdate":true},"rdr2_rdo":{"autoUpdate":true},"rdr2_sp":{"autoUpdate":true},"rdr2_sp_rgl":{"autoUpdate":true}}},"windowsUser":{"externalLaunch":{"requested":{"language":""}},"global":{"allowGamePad":true,"backgroundDownloadThrottle":1048576,"backgroundDownloadThrottleEnabled":false,"hibernateOnGameLaunch":false,"inGameDownloadEnabled":false,"inGameDownloadThrottle":1048576,"inGameDownloadThrottleEnabled":false,"language":"pt-PT","mainWindow":{"fixedres":1,"h":0,"maximize":false,"w":0,"x":0,"y":0},"minimizeOnClose":false,"preloadThrottle":524288,"preloadThrottleEnabled":true,"preloadingEnabled":true,"shownMinimizingToTrayMessage":false,"startWithWindows":false}}}
+[     14344] [   ROSLauncher]                26780/ SC JS message: SetGameLibraries -> {"libraries":[{"location":"C:\\Program Files\\Rockstar Games\\Games","spaceBytes":91323654144},{"location":"C:\\Program Files\\Rockstar Games","spaceBytes":91323654144}]}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto III","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta3"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T15:51:56+00:00","preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta5"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoirevr) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: The VR Case Files","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"neverInstallable","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoirevr"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtavc) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: Vice City","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtavc"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp_rgl) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp_rgl"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (mp3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Max Payne 3: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"mp3"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (bully) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Bully: Scholarship Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pl-PL","ru-RU","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"bully"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtasa) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: San Andreas","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtasa"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2) -> {"branches":[{"branchName":12,"friendlyName":"default","isDefault":true}],"currentBranch":12,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"Red Dead Redemption 2","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_rdo) -> {"branches":[{"branchName":14,"friendlyName":"default","isDefault":true}],"currentBranch":14,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_rdo"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoire) -> {"batchEnd":true,"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","ru-RU"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoire"}
+[     14531] [   ROSLauncher]                26780/ SC JS message: SignInComplete -> {}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto III","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta3"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T15:51:56+00:00","preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta5"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoirevr) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: The VR Case Files","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"neverInstallable","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoirevr"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtavc) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: Vice City","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtavc"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp_rgl) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp_rgl"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (mp3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Max Payne 3: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"mp3"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (bully) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Bully: Scholarship Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pl-PL","ru-RU","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"bully"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtasa) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: San Andreas","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtasa"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2) -> {"branches":[{"branchName":12,"friendlyName":"default","isDefault":true}],"currentBranch":12,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"Red Dead Redemption 2","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_rdo) -> {"branches":[{"branchName":14,"friendlyName":"default","isDefault":true}],"currentBranch":14,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_rdo"}
+[     15609] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoire) -> {"batchEnd":true,"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","ru-RU"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoire"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto III","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta3"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T15:51:56+00:00","preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta5"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoirevr) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: The VR Case Files","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"neverInstallable","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoirevr"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtavc) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: Vice City","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtavc"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp_rgl) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp_rgl"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (mp3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Max Payne 3: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"mp3"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (bully) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Bully: Scholarship Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pl-PL","ru-RU","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"bully"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtasa) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: San Andreas","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtasa"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2) -> {"branches":[{"branchName":12,"friendlyName":"default","isDefault":true}],"currentBranch":12,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"Red Dead Redemption 2","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_rdo) -> {"branches":[{"branchName":14,"friendlyName":"default","isDefault":true}],"currentBranch":14,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_rdo"}
+[     16031] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoire) -> {"batchEnd":true,"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","ru-RU"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoire"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto III","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta3"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T15:51:56+00:00","preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta5"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoirevr) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: The VR Case Files","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"neverInstallable","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoirevr"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtavc) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: Vice City","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtavc"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp_rgl) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp_rgl"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_sp) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_sp"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (mp3) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Max Payne 3: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"mp3"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (bully) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Bully: Scholarship Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pl-PL","ru-RU","ja-JP"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"bully"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gtasa) -> {"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"Grand Theft Auto: San Andreas","languages":["en-US","fr-FR","de-DE","it-IT","es-ES"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gtasa"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2) -> {"branches":[{"branchName":12,"friendlyName":"default","isDefault":true}],"currentBranch":12,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"Red Dead Redemption 2","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (rdr2_rdo) -> {"branches":[{"branchName":14,"friendlyName":"default","isDefault":true}],"currentBranch":14,"currentBranchFriendlyName":"default","currentVersion":"","externalInstall":[],"friendlyName":"","languages":[],"parentApp":"rdr2","shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"prerelease","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"rdr2_rdo"}
+[     16406] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (lanoire) -> {"batchEnd":true,"branches":[],"currentBranch":-1,"currentBranchFriendlyName":"","currentVersion":"","externalInstall":[],"friendlyName":"L.A. Noire: Complete Edition","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","ru-RU"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":false,"install":false,"preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":0,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"lanoire"}
+[     16437] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"batchEnd":true,"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T15:51:56+00:00","preparing":false,"queuePosition":0,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"updateQueued","updateTotal":0},"titleName":"gta5"}
+[     16453] [   ROSLauncher]                26780/ SC JS message: SetUpdateProgress -> {"bytesPerSecond":0,"bytesProgress":0,"bytesTotal":56066032,"progress":"0.00","status":"","titleName":"gta5"}
+[     16453] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"batchEnd":true,"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T15:51:56+00:00","preparing":false,"queuePosition":0,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"starting","updateTotal":0},"titleName":"gta5"}
+[     16687] [   ROSLauncher]                26780/ SC JS message: SetUpdateProgress -> {"bytesPerSecond":0,"bytesProgress":56066032,"bytesTotal":56066032,"progress":"100.00","status":"","titleName":"gta5"}
+[     16687] [   ROSLauncher]                26780/ SC JS message: SetUpdateProgress -> {"bytesPerSecond":0,"bytesProgress":0,"bytesTotal":0,"progress":"0.00","status":"","titleName":"gta5"}
+[     16687] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"batchEnd":true,"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T15:51:56+00:00","preparing":false,"queuePosition":0,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta5"}
+[     16734] [   ROSLauncher]                26780/ SC JS message: SetGameLaunchState -> {"launchState":"prelaunch","message":"","titleName":"gta5"}
+[     16734] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"batchEnd":true,"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T16:00:06+00:00","preparing":false,"queuePosition":0,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta5"}
+[     16797] [   ROSLauncher]                26780/ SC JS message: SetTitleInfo (gta5) -> {"batchEnd":true,"branches":[{"branchName":13,"friendlyName":"default","isDefault":true}],"currentBranch":13,"currentBranchFriendlyName":"default","currentVersion":"1.0.3258.0","externalInstall":[],"friendlyName":"Grand Theft Auto V","languages":["en-US","fr-FR","de-DE","it-IT","es-ES","pt-BR","pl-PL","ru-RU","ko-KR","zh-CHT","ja-JP","es-MX","zh-CHS"],"parentApp":null,"shortcuts":{"desktop":false,"startMenu":false},"status":{"entitlement":true,"install":true,"installLocation":"C:\\Program Files\\Rockstar Games\\Games\\Grand Theft Auto V","lastUsed":"2026-02-10T16:00:06+00:00","preparing":false,"queuePosition":-1,"releaseState":"available","totalBytes":56066032,"updateBytes":0,"updateProgress":0,"updateState":"notUpdating","updateTotal":0},"titleName":"gta5"}
+[     17625] [    GTAProcess]             MainThrd/ hello from "C:\Games\FiveM\FiveM.exe" 
+[     17797] [   ROSLauncher]                26780/ SC JS message: SetGameLaunchState -> {"launchState":"running","message":"","titleName":"gta5"}
+[     20844] [    GTAProcess]             MainThrd/ Replacing function table list entry 0x7ff68789f000 with 0x7ff68789f000
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component fx
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component rage:allocator:five
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component net:base
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component net:tcp-server
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component net:packet
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component vfs:core
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component citizen:resources:core
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component rage:scripting:five
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component scripting:gta
+[     20859] [    GTAProcess]             MainThrd/ pre-gameload component conhost:v2
+[     20890] [    GTAProcess]             MainThrd/ pre-gameload component http-client
+[     20890] [    GTAProcess]             MainThrd/ pre-gameload component citizen:scripting:core
+[     20890] [    GTAProcess]             MainThrd/ pre-gameload component citizen:scripting:v8client
+[     20890] [    GTAProcess]             MainThrd/ pre-gameload component citizen:resources:client
+[     20890] [    GTAProcess]             MainThrd/ pre-gameload component rage:device:five
+[     20906] [    GTAProcess]             MainThrd/ pre-gameload component pool-sizes-state
+[     20906] [    GTAProcess]             MainThrd/ pre-gameload component rage:nutsnbolts:five
+[     20906] [    GTAProcess]             MainThrd/ Skipping XAudio2 patches - XAudio 2.7 is present.
+[     20906] [    GTAProcess]             MainThrd/ pre-gameload component rage:input:five
+[     20922] [    GTAProcess]             MainThrd/ pre-gameload component rage:graphics:five
+[     20937] [    GTAProcess]             MainThrd/ pre-gameload component gta:core:five
+[     20969] [    GTAProcess]             MainThrd/ pre-gameload component gta:game:five
+[     20969] [    GTAProcess]             MainThrd/ pre-gameload component gta:mission-cleanup:five
+[     20969] [    GTAProcess]             MainThrd/ pre-gameload component rage:formats:x
+[     20969] [    GTAProcess]             MainThrd/ pre-gameload component gta:streaming:five
+[     20984] [    GTAProcess]             MainThrd/ >16 GiB of system RAM, increasing streaming allocator size to 2 GiB
+[     21000] [    GTAProcess]             MainThrd/ pre-gameload component net:http-server
+[     21000] [    GTAProcess]             MainThrd/ pre-gameload component legitimacy
+[     21000] [    GTAProcess]             MainThrd/ pre-gameload component citizen:level-loader:five
+[     21000] [    GTAProcess]             MainThrd/ pre-gameload component net
+[     21000] [    GTAProcess]             MainThrd/ pre-gameload component scrbind:base
+[     21000] [    GTAProcess]             MainThrd/ pre-gameload component voip:mumble
+[     21000] [    GTAProcess]             MainThrd/ pre-gameload component gta:net:five
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component citizen:resources:gta
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component font-renderer
+[     21031] [    GTAProcess]             MainThrd/ [FontRenderer] Initializing DirectWrite.
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component nui:core
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component nui:resources
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component devcon
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component discord
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component devtools:five
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component citizen:legacy-net:resources
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component debug:net
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component citizen:game:ipc
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component citizen:game:main
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component citizen:scripting:v8-v12.4
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component asi:five
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component scripthookv
+[     21031] [    GTAProcess]             MainThrd/ pre-gameload component extra-natives:five
+[     21047] [    GTAProcess]             MainThrd/ pre-gameload component lovely-script
+[     21047] [    GTAProcess]             MainThrd/ pre-gameload component vfs:impl:rage
+[     21047] [    GTAProcess]             MainThrd/ pre-gameload component glue
+[     21047] [    GTAProcess]             MainThrd/ pre-gameload component loading-screens:five
+[     21047] [    GTAProcess]             MainThrd/ pre-gameload component citizen:scripting:lua
+[     21047] [    GTAProcess]             MainThrd/ pre-gameload component handling-loader:five
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component nui:gsclient
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component citizen:devtools
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component citizen:scripting:mono
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component tool:formats
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component citizen:mod-loader:five
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component citizen:resources:metadata:lua
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component citizen:scripting:v8node
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component fxdk:main
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component citizen:playernames:five
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component citizen:scripting:mono-v2
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component tool:vehrec
+[     21062] [    GTAProcess]             MainThrd/ pre-gameload component adhesive
+[     21437] [    GTAProcess] [Mumble] Audio Input/ MumbleAudioInput::InitializeAudioDevice: Initialized audio capture device.
+[     22344] [    GTAProcess]               Render/ Creating backbuffer.
+[     22344] [    GTAProcess]               Render/ Done creating backbuffer.
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patch2024_01_G9ECCRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patch2024_01CRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patch2023_02CRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patch2023_01_G9ECCRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patch2023_01CRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay28G9ECNGCRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay28NGCRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay27G9ECNGCRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay27NGCRC:/content.xml
+[     25000] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDayG9ECNGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay26NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay25NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay24NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay23NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay22NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay21NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay20NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY19NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY18NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY17NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY16NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY15NGCRC:/content.xml
+[     25015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY14NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY13NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY12NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY11NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY10NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchday9NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_PATCHDAY8NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay7NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay6NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay5NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay4NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay3NGCRC:/content.xml
+[     25031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay2bNGCRC:/content.xml
+[     25047] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay2NGCRC:/content.xml
+[     25047] [    GTAProcess]             MainThrd/ Loading content XML: dlc_patchDay1NGCRC:/content.xml
+[     25047] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpPatchesNGCRC:/content.xml
+[     25719] [    GTAProcess]             MainThrd/ NullInitializeGraphics
+[     25734] [    GTAProcess]             MainThrd/ ^2Opening \\.\pipe\GTAVLauncher_Pipe, waiting for launcher to load...
+[     25734] [    GTAProcess]             MainThrd/ ^2Launcher gave all-clear - waiting for pipe.
+[     25734] [    GTAProcess]             MainThrd/ ^2Launcher is fine, continuing to initialize!
+[     25765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running INIT_CORE init functions
+[     25765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 1 (55 total)
+[     25765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking InitSystem INIT_CORE init (1 out of 55)
+[     25765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CShaderLib INIT_CORE init (2 out of 55)
+[     25797] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking PostFX INIT_CORE init (3 out of 55)
+[     25812] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGtaAnimManager INIT_CORE init (4 out of 55)
+[     25812] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwClipSetManager INIT_CORE init (5 out of 55)
+[     25844] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking 0xa0f39fb6 INIT_CORE init (6 out of 55)
+[     25844] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwExpressionSetManager INIT_CORE init (7 out of 55)
+[     25844] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwFacialClipSetGroupManager INIT_CORE init (8 out of 55)
+[     25844] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking audNorthAudioEngine INIT_CORE init (9 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CCheat INIT_CORE init (10 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CClock INIT_CORE init (11 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CCullZones INIT_CORE init (12 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CExpensiveProcessDistributer INIT_CORE init (13 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGameLogic INIT_CORE init (14 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking 0xaa19234e INIT_CORE init (15 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CutSceneManagerWrapper INIT_CORE init (16 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CAnimSceneManager INIT_CORE init (17 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPortalTracker INIT_CORE init (18 out of 55)
+[     26094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CNetwork INIT_CORE init (19 out of 55)
+[     26281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CObjectPopulationNY INIT_CORE init (20 out of 55)
+[     26281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking COcclusion INIT_CORE init (21 out of 55)
+[     26281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPlantMgr INIT_CORE init (22 out of 55)
+[     26375] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CShaderHairSort INIT_CORE init (23 out of 55)
+[     26375] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CNetworkTelemetry INIT_CORE init (24 out of 55)
+[     26375] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPopulationStreamingWrapper INIT_CORE init (25 out of 55)
+[     26375] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CRenderer INIT_CORE init (26 out of 55)
+[     26734] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CReplayMgr INIT_CORE init (27 out of 55)
+[     26734] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking VideoRecording INIT_CORE init (28 out of 55)
+[     26734] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking VideoPlayback INIT_CORE init (29 out of 55)
+[     26734] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking VideoPlaybackThumbnailManager INIT_CORE init (30 out of 55)
+[     26734] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking 0x8930d2f7 INIT_CORE init (31 out of 55)
+[     26734] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CStatsMgr INIT_CORE init (32 out of 55)
+[     26953] [    GTAProcess]        CrBrowserMain/ OnConnectionProgress: Requesting server variables...
+[     26969] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: Requesting authentication ticket...
+[     27015] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CFrontendStatsMgr INIT_CORE init (33 out of 55)
+[     27015] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CControllerLabelMgr INIT_CORE init (34 out of 55)
+[     27015] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CStuntJumpManager INIT_CORE init (35 out of 55)
+[     27015] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTheScripts INIT_CORE init (36 out of 55)
+[     27234] [    GTAProcess]        UV loop: tcp0/ OnConnectionProgress: Handshaking with server...
+[     27484] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: monitor: Deferring connection...
+[     27484] [    GTAProcess]  UV loop: httpClient/ qbx_core: Deferring connection...
+[     27484] [    GTAProcess]  UV loop: httpClient/ 
+[     27547] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: monitor: 
+[     27547] [    GTAProcess]  UV loop: httpClient/ [txAdmin] Checking banlist/whitelist... (0/5)
+[     27547] [    GTAProcess]  UV loop: httpClient/ qbx_core: Deferring connection...
+[     27547] [    GTAProcess]  UV loop: httpClient/ 
+[     27609] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: monitor: 
+[     27609] [    GTAProcess]  UV loop: httpClient/ [txAdmin] Checking banlist/whitelist... (1/5)
+[     27609] [    GTAProcess]  UV loop: httpClient/ qbx_core: Deferring connection...
+[     27609] [    GTAProcess]  UV loop: httpClient/ 
+[     27609] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: monitor: 
+[     27609] [    GTAProcess]  UV loop: httpClient/ [txAdmin] Checking banlist/whitelist... (1/5)
+[     27609] [    GTAProcess]  UV loop: httpClient/ qbx_core: Fetching user...
+[     27609] [    GTAProcess]  UV loop: httpClient/ 
+[     27672] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: qbx_core: Fetching user...
+[     27672] [    GTAProcess]  UV loop: httpClient/ 
+[     27672] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: qbx_core: Hello ᲼. We are checking if you are banned.
+[     27672] [    GTAProcess]  UV loop: httpClient/ 
+[     27672] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: qbx_core: Welcome ᲼ to Server.
+[     27672] [    GTAProcess]  UV loop: httpClient/ 
+[     27734] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: Requesting server endpoints...
+[     27750] [    GTAProcess]  UV loop: httpClient/ OnConnectionProgress: Requesting server permissions...
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptAreas INIT_CORE init (37 out of 55)
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptDebug INIT_CORE init (38 out of 55)
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptHud INIT_CORE init (39 out of 55)
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptPedAIBlips INIT_CORE init (40 out of 55)
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTrain INIT_CORE init (41 out of 55)
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CWaypointRecording INIT_CORE init (42 out of 55)
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehicleRecordingMgr INIT_CORE init (43 out of 55)
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTaskClassInfoManager INIT_CORE init (44 out of 55)
+[     29156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTuningManager INIT_CORE init (45 out of 55)
+[     29172] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CAppDataMgr INIT_CORE init (46 out of 55)
+[     29172] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CNetRespawnMgr INIT_CORE init (47 out of 55)
+[     29172] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CAgitatedManager INIT_CORE init (48 out of 55)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScenarioActionManager INIT_CORE init (49 out of 55)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehiclePopulation INIT_CORE init (50 out of 55)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPostScan INIT_CORE init (51 out of 55)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CExtraMetadataMgr INIT_CORE init (52 out of 55)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking BackgroundScripts INIT_CORE init (53 out of 55)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CIplCullBox INIT_CORE init (54 out of 55)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking perfClearingHouse INIT_CORE init (55 out of 55)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 2 (11 total)
+[     29187] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScene INIT_CORE init (1 out of 11)
+[     29562] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking MeshBlendManager INIT_CORE init (2 out of 11)
+[     29562] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVisualEffects INIT_CORE init (3 out of 11)
+[     29750] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking ViewportSystemInit INIT_CORE init (4 out of 11)
+[     29750] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPhoneMgr INIT_CORE init (5 out of 11)
+[     29750] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPhotoManager INIT_CORE init (6 out of 11)
+[     29750] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CLODLightManager INIT_CORE init (7 out of 11)
+[     29750] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CLODLights INIT_CORE init (8 out of 11)
+[     29750] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking AmbientLights INIT_CORE init (9 out of 11)
+[     29765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGps INIT_CORE init (10 out of 11)
+[     29765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPedAILodManager INIT_CORE init (11 out of 11)
+[     29765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 3 (20 total)
+[     29765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPauseMenu INIT_CORE init (1 out of 20)
+[     30078] [    GTAProcess]             MainThrd/ loading AUDIO_SOUNDDATA menuAud:/x64/audio/dlcTuner_sounds.dat.
+[     30094] [    GTAProcess]             MainThrd/ done loading menuAud:/x64/audio/dlcTuner_sounds.dat in data file mounter 0000000141a42838.
+[     30094] [    GTAProcess]             MainThrd/ loading AUDIO_WAVEPACK menuaud:/x64/audio/sfx/dlc_Tuner_Music.
+[     30094] [    GTAProcess]             MainThrd/ done loading menuaud:/x64/audio/sfx/dlc_Tuner_Music in data file mounter 0000000141a43eb0.
+[     30094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking cStoreScreenMgr INIT_CORE init (2 out of 20)
+[     30094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVideoEditorUI INIT_CORE init (3 out of 20)
+[     30094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking WatermarkRenderer INIT_CORE init (4 out of 20)
+[     30094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMousePointer INIT_CORE init (5 out of 20)
+[     30094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTextInputBox INIT_CORE init (6 out of 20)
+[     30094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking 0x602ee6e2 INIT_CORE init (7 out of 20)
+[     30094] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMiniMap INIT_CORE init (8 out of 20)
+[     30109] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CNewHud INIT_CORE init (9 out of 20)
+[     30109] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking 0x4bfbfa2c INIT_CORE init (10 out of 20)
+[     30109] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking WarningScreen INIT_CORE init (11 out of 20)
+[     30109] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CBusySpinner INIT_CORE init (12 out of 20)
+[     30109] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking camManager INIT_CORE init (13 out of 20)
+[     30109] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CDLCScript INIT_CORE init (14 out of 20)
+[     30109] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGameStreamMgr INIT_CORE init (15 out of 20)
+[     30125] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking 0x4d167300 INIT_CORE init (16 out of 20)
+[     30125] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwMetaDataStore INIT_CORE init (17 out of 20)
+[     30125] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CReplayCoordinator INIT_CORE init (18 out of 20)
+[     30125] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVideoEditorInterface INIT_CORE init (19 out of 20)
+[     30125] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking UI3DDrawManager INIT_CORE init (20 out of 20)
+[     30125] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Done running INIT_CORE init functions!
+[     30640] [    GTAProcess]        CrBrowserMain/ OnConnectionProgress: Requesting server feature policy...
+[     31156] [    GTAProcess]               Render/ OnConnectionProgress: Downloading content
+[     31219] [    GTAProcess]               Render/ OnConnectionProgress: Loading content manifest...
+[     31250] [    GTAProcess]  UV loop: httpClient/ Required resources: monitor mapmanager chat spawnmanager sessionmanager baseevents ox_lib oxmysql qbx_core ox_target ox_doorlock ox_inventory ox_fuel qbx_adminmenu qbx_medical qbx_ambulancejob qbx_bankrobbery qbx_binoculars qbx_busjob qbx_carwash qbx_chat_theme qbx_cityhall qbx_customs qbx_density qbx_divegear qbx_diving qbx_drugs qbx_fireworks qbx_garages qbx_garbagejob qbx_houserobbery qbx_hud MugShotBase64 qbx_idcard qbx_jewelery qbx_lapraces qbx_management qbx_mechanicjob qbx_newsjob qbx_pawnshop qbx_police qbx_properties qbx_radialmenu qbx_recyclejob qbx_scoreboard qbx_scrapyard qbx_seatbelt qbx_smallresources qbx_spawn qbx_storerobbery qbx_streetraces qbx_taxijob qbx_towjob qbx_truckerjob qbx_truckrobbery qbx_vehiclekeys qbx_vehiclesales qbx_vehicleshop qbx_vineyard qbx_weed Renewed-Banking Renewed-Weathersync bob74_ipl illenium-appearance informational loadscreen mana_audio mhacking safecracker screencapture scully_emotemenu ultra-voltlab vehiclehandler xt-prison pma-voice mm_radio pillbox viccs_needs viccs_phone 
+[     31281] [    GTAProcess]               Render/ OnConnectionProgress: Verifying monitor (0 of 79 - 2.01/12.53 MiB)
+[     31359] [    GTAProcess]               Render/ OnConnectionProgress: Verifying monitor (0 of 79 - 6.17/12.53 MiB)
+[     31422] [    GTAProcess]               Render/ OnConnectionProgress: Verifying monitor (0 of 79 - 10.34/12.53 MiB)
+[     31484] [    GTAProcess]               Render/ OnConnectionProgress: Verifying ox_lib (6 of 79 - 0.41/6.58 MiB)
+[     31547] [    GTAProcess]               Render/ OnConnectionProgress: Verifying ox_lib (6 of 79 - 4.68/6.58 MiB)
+[     31625] [    GTAProcess]               Render/ OnConnectionProgress: Verifying ox_doorlock (10 of 79 - 0.12/0.68 MiB)
+[     31687] [    GTAProcess]               Render/ OnConnectionProgress: Verifying ox_inventory (11 of 79 - 3.62/10.48 MiB)
+[     31750] [    GTAProcess]               Render/ OnConnectionProgress: Verifying ox_inventory (11 of 79 - 8.12/10.48 MiB)
+[     31812] [    GTAProcess]               Render/ OnConnectionProgress: Verifying qbx_binoculars (17 of 79 - 0.01/0.01 MiB)
+[     31890] [    GTAProcess]               Render/ OnConnectionProgress: Verifying MugShotBase64 (32 of 79 - 0.31/3.45 MiB)
+[     31953] [    GTAProcess]               Render/ OnConnectionProgress: Verifying qbx_jewelery (34 of 79 - 0.05/0.05 MiB)
+[     32015] [    GTAProcess]               Render/ OnConnectionProgress: Verifying qbx_radialmenu (42 of 79 - 0.14/0.14 MiB)
+[     32078] [    GTAProcess]               Render/ OnConnectionProgress: Mounted qbx_vineyard (59 of 79)
+[     32156] [    GTAProcess]               Render/ OnConnectionProgress: Verifying loadscreen (65 of 79 - 1.17/7.71 MiB)
+[     32219] [    GTAProcess]               Render/ OnConnectionProgress: Verifying loadscreen (65 of 79 - 5.59/7.71 MiB)
+[     32281] [    GTAProcess]               Render/ OnConnectionProgress: Verifying scully_emotemenu (70 of 79 - 0.32/1.29 MiB)
+[     32359] [    GTAProcess]               Render/ OnConnectionProgress: Verifying ultra-voltlab (71 of 79 - 3.07/4.49 MiB)
+[     32422] [    GTAProcess]               Render/ OnConnectionProgress: Verifying viccs_needs (77 of 79 - 1.02/1.02 MiB)
+[     32484] [    GTAProcess]               Render/ OnConnectionProgress: Downloading viccs_phone (78 of 79 - 0.34/0.34 MiB)
+[     32500] [    GTAProcess]                39856/ ResourceCache::AddEntry: Saved cache:v1:d76fe5a9053188b3b23144a1a237bf00ac5aa2fa to the index cache.
+[     32859] [    GTAProcess]               Render/ OnConnectionProgress: Mounted viccs_phone (79 of 79)
+[     32859] [    GTAProcess]               Render/ OnConnectionProgress: Downloading completed
+[     32922] [    GTAProcess]               Render/ OnConnectionProgress: Fetching info from server...
+[     32984] [    GTAProcess]                27064/ OnConnectionProgress: Connecting to server...
+[     33125] [    GTAProcess]               Render/ ^2Received connectOK: ServerID 1, SlotID 128, HostID 65535
+[     33187] [    GTAProcess]               Render/ ^2Network connected, triggering initial game load...
+[     33281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running INIT_BEFORE_MAP_LOADED init functions
+[     33281] [    GTAProcess]             MainThrd/ Loading default meta overrides (total: 0)
+[     33281] [    GTAProcess]             MainThrd/ Done loading default meta overrides!
+[     33281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 1 (31 total)
+[     33281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGtaAnimManager INIT_BEFORE_MAP_LOADED init (1 out of 31)
+[     33281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGameWorld INIT_BEFORE_MAP_LOADED init (2 out of 31)
+[     33281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGarages INIT_BEFORE_MAP_LOADED init (3 out of 31)
+[     33281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CHandlingDataMgr INIT_BEFORE_MAP_LOADED init (4 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ Loading 254 handling entries from commoncrc:/data/handling.meta
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking INSTANCESTORE INIT_BEFORE_MAP_LOADED init (5 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMapAreas INIT_BEFORE_MAP_LOADED init (6 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwMapTypesStore INIT_BEFORE_MAP_LOADED init (7 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CModelInfo INIT_BEFORE_MAP_LOADED init (8 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPatrolRoutes INIT_BEFORE_MAP_LOADED init (9 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPopZones INIT_BEFORE_MAP_LOADED init (10 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMapZoneManager INIT_BEFORE_MAP_LOADED init (11 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPhysics INIT_BEFORE_MAP_LOADED init (12 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTrain INIT_BEFORE_MAP_LOADED init (13 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking Water INIT_BEFORE_MAP_LOADED init (14 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking COcclusion INIT_BEFORE_MAP_LOADED init (15 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwClipSetManager INIT_BEFORE_MAP_LOADED init (16 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwExpressionSetManager INIT_BEFORE_MAP_LOADED init (17 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwFacialClipSetGroupManager INIT_BEFORE_MAP_LOADED init (18 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTVPlaylistManager INIT_BEFORE_MAP_LOADED init (19 out of 31)
+[     33328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CAmbientModelSetManager INIT_BEFORE_MAP_LOADED init (20 out of 31)
+[     33344] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CLadderMetadataManager INIT_BEFORE_MAP_LOADED init (21 out of 31)
+[     33344] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScenarioManager INIT_BEFORE_MAP_LOADED init (22 out of 31)
+[     33406] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CConditionalAnimManager INIT_BEFORE_MAP_LOADED init (23 out of 31)
+[     33422] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehicleMetadataMgr INIT_BEFORE_MAP_LOADED init (24 out of 31)
+[     33484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CRandomEventManager INIT_BEFORE_MAP_LOADED init (25 out of 31)
+[     33484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CCrimeInformationManager INIT_BEFORE_MAP_LOADED init (26 out of 31)
+[     33484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CWitnessInformationManager INIT_BEFORE_MAP_LOADED init (27 out of 31)
+[     33484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPortal INIT_BEFORE_MAP_LOADED init (28 out of 31)
+[     33484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking LightEntityMgr INIT_BEFORE_MAP_LOADED init (29 out of 31)
+[     33484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking AnimBlackboard INIT_BEFORE_MAP_LOADED init (30 out of 31)
+[     33484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPathServer::InitBeforeMapLoaded INIT_BEFORE_MAP_LOADED init (31 out of 31)
+[     33484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Done running INIT_BEFORE_MAP_LOADED init functions!
+[     33765] [    GTAProcess]             MainThrd/ LoadScreenFuncs::OnEnd: Instrumented function 0x140e01168 (2) took 149msec
+[     34250] [    GTAProcess]             MainThrd/ LoadScreenFuncs::OnEnd: Instrumented function 0x14090f420 (53) took 484msec
+[     36578] [    GTAProcess]             MainThrd/ LoadScreenFuncs::OnEnd: Instrumented function 0x1407fafb4 (56) took 2319msec
+[     36797] [    GTAProcess]             MainThrd/ LoadScreenFuncs::OnEnd: Instrumented function 0x14093bb9c (33) took 131msec
+[     36890] [    GTAProcess]             MainThrd/ LoadScreenFuncs::OnEnd: Instrumented function 0x140e603a4 (38) took 86msec
+[     37015] [    GTAProcess]             MainThrd/ LoadScreenFuncs::OnEnd: Instrumented function 0x14093e44c (45) took 102msec
+[     37031] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running INIT_AFTER_MAP_LOADED init functions
+[     37031] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 1 (29 total)
+[     37031] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking audNorthAudioEngine INIT_AFTER_MAP_LOADED init (1 out of 29)
+[     37031] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CClock INIT_AFTER_MAP_LOADED init (2 out of 29)
+[     37031] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CEventDataManager INIT_AFTER_MAP_LOADED init (3 out of 29)
+[     37047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CHandlingDataMgr INIT_AFTER_MAP_LOADED init (4 out of 29)
+[     37047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMapAreas INIT_AFTER_MAP_LOADED init (5 out of 29)
+[     37047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPed INIT_AFTER_MAP_LOADED init (6 out of 29)
+[     37047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPopCycle INIT_AFTER_MAP_LOADED init (7 out of 29)
+[     37062] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPopZones INIT_AFTER_MAP_LOADED init (8 out of 29)
+[     37062] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMapZoneManager INIT_AFTER_MAP_LOADED init (9 out of 29)
+[     37062] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPopulationStreamingWrapper INIT_AFTER_MAP_LOADED init (10 out of 29)
+[     37062] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CStatsMgr INIT_AFTER_MAP_LOADED init (11 out of 29)
+[     37062] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CStreamingRequestList INIT_AFTER_MAP_LOADED init (12 out of 29)
+[     37062] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTask INIT_AFTER_MAP_LOADED init (13 out of 29)
+[     37062] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTrain INIT_AFTER_MAP_LOADED init (14 out of 29)
+[     37062] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehicleModelInfo INIT_AFTER_MAP_LOADED init (15 out of 29)
+[     37140] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehiclePopulation INIT_AFTER_MAP_LOADED init (16 out of 29)
+[     37140] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking Water INIT_AFTER_MAP_LOADED init (17 out of 29)
+[     37156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGameWorldHeightMap INIT_AFTER_MAP_LOADED init (18 out of 29)
+[     37156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGameWorldWaterHeight INIT_AFTER_MAP_LOADED init (19 out of 29)
+[     37156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CAmbientAnimationManager INIT_AFTER_MAP_LOADED init (20 out of 29)
+[     37156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CAmbientAudioManager INIT_AFTER_MAP_LOADED init (21 out of 29)
+[     37156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CNetwork INIT_AFTER_MAP_LOADED init (22 out of 29)
+[     37156] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwClipSetManager INIT_AFTER_MAP_LOADED init (23 out of 29)
+[     37328] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwAnimDirector INIT_AFTER_MAP_LOADED init (24 out of 29)
+[     37359] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwExpressionSetManager INIT_AFTER_MAP_LOADED init (25 out of 29)
+[     37359] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwFacialClipSetGroupManager INIT_AFTER_MAP_LOADED init (26 out of 29)
+[     37359] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CThePopMultiplierAreas INIT_AFTER_MAP_LOADED init (27 out of 29)
+[     37359] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking MeshBlendManager INIT_AFTER_MAP_LOADED init (28 out of 29)
+[     37359] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CProceduralInfo INIT_AFTER_MAP_LOADED init (29 out of 29)
+[     37390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 2 (2 total)
+[     37390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVisualEffects INIT_AFTER_MAP_LOADED init (1 out of 2)
+[     37531] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPedModelInfo INIT_AFTER_MAP_LOADED init (2 out of 2)
+[     37531] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Done running INIT_AFTER_MAP_LOADED init functions!
+[     37531] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running INIT_SESSION init functions
+[     37625] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 1 (5 total)
+[     37625] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehicleRecordingMgr INIT_SESSION init (1 out of 5)
+[     37625] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CStreaming INIT_SESSION init (2 out of 5)
+[     37625] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CFocusEntityMgr INIT_SESSION init (3 out of 5)
+[     37625] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking audNorthAudioEngine INIT_SESSION init (4 out of 5)
+[     39140] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGtaAnimManager INIT_SESSION init (5 out of 5)
+[     39140] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 2 (84 total)
+[     39140] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CModelInfo::Init INIT_SESSION init (1 out of 84)
+[     39140] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CInstanceListAssetLoader::Init INIT_SESSION init (2 out of 84)
+[     39390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTask INIT_SESSION init (3 out of 84)
+[     39390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScenarioPointManagerInitSession INIT_SESSION init (4 out of 84)
+[     39390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CRenderPhaseCascadeShadowsInterface INIT_SESSION init (5 out of 84)
+[     39390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwAnimDirector INIT_SESSION init (6 out of 84)
+[     39390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwClipSetManager INIT_SESSION init (7 out of 84)
+[     39390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwExpressionSetManager INIT_SESSION init (8 out of 84)
+[     39390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwFacialClipSetGroupManager INIT_SESSION init (9 out of 84)
+[     39390] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTaskRecover INIT_SESSION init (10 out of 84)
+[     39406] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking camManager INIT_SESSION init (11 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CAssistedMovementRouteStore INIT_SESSION init (12 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CBuses INIT_SESSION init (13 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CCheat INIT_SESSION init (14 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CControlMgr INIT_SESSION init (15 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGameLogic INIT_SESSION init (16 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGameWorld INIT_SESSION init (17 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGarages INIT_SESSION init (18 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGps INIT_SESSION init (19 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CJunctions INIT_SESSION init (20 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPathZoneManager INIT_SESSION init (21 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMessages INIT_SESSION init (22 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CNetwork INIT_SESSION init (23 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CObjectPopulationNY INIT_SESSION init (24 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPathFind INIT_SESSION init (25 out of 84)
+[     39437] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPed INIT_SESSION init (26 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPedModelInfo INIT_SESSION init (27 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPedPopulation INIT_SESSION init (28 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPerformance INIT_SESSION init (29 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPedAILodManager INIT_SESSION init (30 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehicleAILodManager INIT_SESSION init (31 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPhoneMgr INIT_SESSION init (32 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPhotoManager INIT_SESSION init (33 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPhysics INIT_SESSION init (34 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPickupManager INIT_SESSION init (35 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CNetworkTelemetry INIT_SESSION init (36 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPopCycle INIT_SESSION init (37 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CProcObjectMan INIT_SESSION init (38 out of 84)
+[     39469] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CReplayMgr INIT_SESSION init (39 out of 84)
+[     39484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CRestart INIT_SESSION init (40 out of 84)
+[     39484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScaleformMgr INIT_SESSION init (41 out of 84)
+[     39484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CSlownessZonesManager INIT_SESSION init (42 out of 84)
+[     39484] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CStreamingRequestList INIT_SESSION init (43 out of 84)
+[     39500] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CStuntJumpManager INIT_SESSION init (44 out of 84)
+[     39500] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CActionManager INIT_SESSION init (45 out of 84)
+[     39531] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CRenderTargetMgr INIT_SESSION init (46 out of 84)
+[     39531] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTheScripts INIT_SESSION init (47 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptAreas INIT_SESSION init (48 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptCars INIT_SESSION init (49 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptPeds INIT_SESSION init (50 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptEntities INIT_SESSION init (51 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptDebug INIT_SESSION init (52 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptHud INIT_SESSION init (53 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptPedAIBlips INIT_SESSION init (54 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CStatsMgr INIT_SESSION init (55 out of 84)
+[     39547] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTrain INIT_SESSION init (56 out of 84)
+[     39562] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CUserDisplay INIT_SESSION init (57 out of 84)
+[     39562] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehiclePopulation INIT_SESSION init (58 out of 84)
+[     39562] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVisualEffects INIT_SESSION init (59 out of 84)
+[     39765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CDispatchData INIT_SESSION init (60 out of 84)
+[     39765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CRoadBlock INIT_SESSION init (61 out of 84)
+[     39765] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CWeaponManager INIT_SESSION init (62 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScriptedGunTaskMetadataMgr INIT_SESSION init (63 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehicleCombatAvoidanceArea INIT_SESSION init (64 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CCombatInfoMgr INIT_SESSION init (65 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CCombatDirector INIT_SESSION init (66 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CVehicleChaseDirector INIT_SESSION init (67 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CBoatChaseDirector INIT_SESSION init (68 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTacticalAnalysis INIT_SESSION init (69 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CCoverFinder INIT_SESSION init (70 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CWorldPoints INIT_SESSION init (71 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking fwTimer INIT_SESSION init (72 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking PostFX INIT_SESSION init (73 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CRenderer INIT_SESSION init (74 out of 84)
+[     39953] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking ViewportSystemInitLevel INIT_SESSION init (75 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGameSituation INIT_SESSION init (76 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPrioritizedClipSetRequestManager INIT_SESSION init (77 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPrioritizedClipSetStreamer INIT_SESSION init (78 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CSituationalClipSetStreamer INIT_SESSION init (79 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CClipDictionaryStoreInterface INIT_SESSION init (80 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CRiots INIT_SESSION init (81 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CCover INIT_SESSION init (82 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CExtraMetadataMgr::ClassInit INIT_SESSION init (83 out of 84)
+[     39969] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking BackgroundScripts INIT_SESSION init (84 out of 84)
+[     39984] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Running functions of order 3 (18 total)
+[     39984] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CText INIT_SESSION init (1 out of 18)
+[     39984] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMiniMap INIT_SESSION init (2 out of 18)
+[     40015] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CNewHud INIT_SESSION init (3 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking 0x4bfbfa2c INIT_SESSION init (4 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CBusySpinner INIT_SESSION init (5 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CMultiplayerChat INIT_SESSION init (6 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CExplosionManager INIT_SESSION init (7 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPickupDataManager INIT_SESSION init (8 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPopulationStreaming INIT_SESSION init (9 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CDecoratorInterface INIT_SESSION init (10 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CScenarioManager INIT_SESSION init (11 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CGestureManager INIT_SESSION init (12 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CTexLod INIT_SESSION init (13 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPathServer::InitSession INIT_SESSION init (14 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CPauseMenu INIT_SESSION init (15 out of 18)
+[     40047] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CExtraContentWrapper INIT_SESSION init (16 out of 18)
+[     40062] [    GTAProcess]             MainThrd/ Loading content XML: dlcMPBeachCRC:/content.xml
+[     40078] [    GTAProcess]             MainThrd/ Loading 4 handling entries from dlcMPBeachCRC:/common/data/handling.meta
+[     40109] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpChristmasCRC:/content.xml
+[     40109] [    GTAProcess]             MainThrd/ Loading content XML: dlcMPValentinesCRC:/content.xml
+[     40140] [    GTAProcess]             MainThrd/ Loading 1 handling entries from dlcMPValentinesCRC:/common/data/handling.meta
+[     40156] [    GTAProcess]             MainThrd/ Loading content XML: dlcMPBusinessCRC:/content.xml
+[     40203] [    GTAProcess]             MainThrd/ Loading 4 handling entries from dlcMPBusinessCRC:/common/data/handling.meta
+[     40250] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpBusiness2CRC:/content.xml
+[     40265] [    GTAProcess]             MainThrd/ Loading 4 handling entries from dlc_mpBusiness2CRC:/common/data/handling.meta
+[     40312] [    GTAProcess]             MainThrd/ Loading content XML: dlcMPHipsterCRC:/content.xml
+[     40328] [    GTAProcess]             MainThrd/ Loading 7 handling entries from dlcMPHipsterCRC:/common/data/handling.meta
+[     40390] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpIndependenceCRC:/content.xml
+[     40422] [    GTAProcess]             MainThrd/ Duplicate Archetype 'p_w_ar_musket_chrg' (3E15FEA3), seen in 'Extra' and 'v_minigame.ytyp'
+[     40422] [    GTAProcess]             MainThrd/ Loading 1 handling entries from dlc_mpIndependenceCRC:/common/data/handling.meta
+[     40453] [    GTAProcess]             MainThrd/ Loading content XML: dlcMPPilotCRC:/content.xml
+[     40469] [    GTAProcess]             MainThrd/ Loading 4 handling entries from dlcMpPilotCRC:/common/data/handling.meta
+[     40500] [    GTAProcess]             MainThrd/ Loading content XML: dlcMPLTSCRC:/content.xml
+[     40531] [    GTAProcess]             MainThrd/ Loading 3 handling entries from dlcMPLTSCRC:/common/data/handling.meta
+[     40562] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpChristmas2CRC:/content.xml
+[     40594] [    GTAProcess]             MainThrd/ Loading 4 handling entries from dlc_mpChristmas2CRC:/common/data/handling.meta
+[     40625] [    GTAProcess]             MainThrd/ Loading content XML: dlcMPHeistCRC:/content.xml
+[     40703] [    GTAProcess]             MainThrd/ Loading 16 handling entries from dlcMPHeistCRC:/common/data/handling.meta
+[     40797] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpLuxeCRC:/content.xml
+[     40828] [    GTAProcess]             MainThrd/ Loading 6 handling entries from dlc_mpLuxeCRC:/common/data/handling.meta
+[     40859] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpLuxe2CRC:/content.xml
+[     40890] [    GTAProcess]             MainThrd/ Loading 6 handling entries from dlc_mpLuxe2CRC:/common/data/handling.meta
+[     40922] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpReplayCRC:/content.xml
+[     40922] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpLowriderCRC:/content.xml
+[     40984] [    GTAProcess]             MainThrd/ Loading 6 handling entries from dlc_mpLowriderCRC:/common/data/handling.meta
+[     41047] [    GTAProcess]             MainThrd/ Loading content XML: dlcMPHalloweenCRC:/content.xml
+[     41062] [    GTAProcess]             MainThrd/ Loading 2 handling entries from dlcMPHalloweenCRC:/common/data/handling.meta
+[     41094] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpApartmentCRC:/content.xml
+[     41156] [    GTAProcess]             MainThrd/ Loading 18 handling entries from dlc_mpApartmentCRC:/common/data/handling.meta
+[     41203] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpxmas_604490CRC:/content.xml
+[     41219] [    GTAProcess]             MainThrd/ Loading 1 handling entries from dlc_mpxmas_604490CRC:/common/data/handling.meta
+[     41234] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpJanuary2016CRC:/content.xml
+[     41265] [    GTAProcess]             MainThrd/ Loading 2 handling entries from dlc_mpJanuary2016CRC:/common/data/handling.meta
+[     41297] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpValentines2CRC:/content.xml
+[     41312] [    GTAProcess]             MainThrd/ Loading 1 handling entries from dlc_mpValentines2CRC:/common/data/handling.meta
+[     41312] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpLowrider2CRC:/content.xml
+[     41359] [    GTAProcess]             MainThrd/ Loading 7 handling entries from dlc_mpLowrider2CRC:/common/data/handling.meta
+[     41406] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpExecutiveCRC:/content.xml
+[     41469] [    GTAProcess]             MainThrd/ Loading 14 handling entries from dlc_mpExecutiveCRC:/common/data/handling.meta
+[     41515] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpStuntCRC:/content.xml
+[     41562] [    GTAProcess]             MainThrd/ Loading 15 handling entries from dlc_mpStuntCRC:/common/data/handling.meta
+[     41625] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpBikerCRC:/content.xml
+[     41765] [    GTAProcess]             MainThrd/ Loading 21 handling entries from dlc_mpBikerCRC:/common/data/handling.meta
+[     41875] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpImportExportCRC:/content.xml
+[     41953] [    GTAProcess]             MainThrd/ Loading 23 handling entries from dlc_mpImportExportCRC:/common/data/handling.meta
+[     42047] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpSpecialRacesCRC:/content.xml
+[     42094] [    GTAProcess]             MainThrd/ Loading 4 handling entries from dlc_mpSpecialRacesCRC:/common/data/handling.meta
+[     42109] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpGunRunningCRC:/content.xml
+[     42234] [    GTAProcess]             MainThrd/ Loading 18 handling entries from dlc_mpGunRunningCRC:/common/data/handling.meta
+[     42484] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpAirRacesCRC:/content.xml
+[     42547] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpSmugglerCRC:/content.xml
+[     42625] [    GTAProcess]             MainThrd/ Loading 19 handling entries from dlc_mpSmugglerCRC:/common/data/handling.meta
+[     42797] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpChristmas2017CRC:/content.xml
+[     42953] [    GTAProcess]             MainThrd/ Loading 29 handling entries from dlc_mpChristmas2017CRC:/common/data/handling.meta
+[     43187] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpAssaultCRC:/content.xml
+[     43234] [    GTAProcess]             MainThrd/ Loading 16 handling entries from dlc_mpassaultCRC:/common/data/handling.meta
+[     43281] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpBattleCRC:/content.xml
+[     43390] [    GTAProcess]             MainThrd/ Loading 14 handling entries from dlc_mpBattleCRC:/common/data/handling.meta
+[     43547] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpChristmas2018CRC:/content.xml
+[     43828] [    GTAProcess]             MainThrd/ Loading 33 handling entries from dlc_mpChristmas2018CRC:/common/data/handling.meta
+[     44109] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpVinewoodCRC:/content.xml
+[     44250] [    GTAProcess]             MainThrd/ Loading 22 handling entries from dlc_mpVinewoodCRC:/common/data/handling.meta
+[     44406] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpHeist3CRC:/content.xml
+[     44578] [    GTAProcess]             MainThrd/ Loading 20 handling entries from dlc_mpHeist3CRC:/common/data/handling.meta
+[     44750] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpSumCRC:/content.xml
+[     44828] [    GTAProcess]             MainThrd/ Loading 15 handling entries from dlc_mpSumCRC:/common/data/handling.meta
+[     44984] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpHeist4CRC:/content.xml
+[     45172] [    GTAProcess]             MainThrd/ Loading 20 handling entries from dlc_mpHeist4CRC:/common/data/handling.meta
+[     45422] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpTunerCRC:/content.xml
+[     45562] [    GTAProcess]             MainThrd/ Loading 17 handling entries from dlc_mpTunerCRC:/common/data/handling.meta
+[     45734] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpSecurityCRC:/content.xml
+[     45922] [    GTAProcess]             MainThrd/ Loading 16 handling entries from dlc_mpSecurityCRC:/common/data/handling.meta
+[     46062] [    GTAProcess]             MainThrd/ Loading content XML: dlc_mpG9ECCRC:/content.xml
+[     46094] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MPSUM2CRC:/content.xml
+[     46203] [    GTAProcess]             MainThrd/ Loading 18 handling entries from dlc_mpSum2CRC:/common/data/handling.meta
+[     46375] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MPSUM2_G9ECCRC:/content.xml
+[     46390] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MPCHRISTMAS3CRC:/content.xml
+[     46531] [    GTAProcess]             MainThrd/ Loading 13 handling entries from dlc_mpChristmas3CRC:/common/data/handling.meta
+[     46719] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MPCHRISTMAS3_G9ECCRC:/content.xml
+[     46719] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MP2023_01CRC:/content.xml
+[     46844] [    GTAProcess]             MainThrd/ Loading 14 handling entries from dlc_mp2023_01CRC:/common/data/handling.meta
+[     47015] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MP2023_01_G9ECCRC:/content.xml
+[     47031] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MP2023_02CRC:/content.xml
+[     47187] [    GTAProcess]             MainThrd/ Loading 23 handling entries from dlc_mp2023_02CRC:/common/data/handling.meta
+[     47375] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MP2023_02_G9ECCRC:/content.xml
+[     47375] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MP2024_01CRC:/content.xml
+[     47515] [    GTAProcess]             MainThrd/ Loading 21 handling entries from dlc_mp2024_01CRC:/common/data/handling.meta
+[     47656] [    GTAProcess]             MainThrd/ Loading content XML: dlc_MP2024_01_G9ECCRC:/content.xml
+[     47656] [    GTAProcess]             MainThrd/ Loading content XML: dlcSPUpgradeCRC:/content.xml
+[     47703] [    GTAProcess]             MainThrd/ Loading 12 handling entries from dlcSPUpgrade:/common/data/handling.meta
+[     51234] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking CDLCScript INIT_SESSION init (17 out of 18)
+[     51234] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Invoking audNorthAudioEngineDLC INIT_SESSION init (18 out of 18)
+[     51250] [    GTAProcess]             MainThrd/ Loading mounted data files (total: 30)
+[     51250] [    GTAProcess]             MainThrd/ loading AUDIO_WAVEPACK resources:/ox_doorlock/audio/dlc_oxdoorlock.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/ox_doorlock/audio/dlc_oxdoorlock in data file mounter 0000000141a43eb0.
+[     51250] [    GTAProcess]             MainThrd/ loading AUDIO_SOUNDDATA resources:/ox_doorlock/audio/data/oxdoorlock_sounds.dat.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/ox_doorlock/audio/data/oxdoorlock_sounds.dat in data file mounter 0000000141a42838.
+[     51250] [    GTAProcess]             MainThrd/ loading CARCOLS_GEN9_FILE resources:/qbx_customs/carcols_gen9.meta.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/qbx_customs/carcols_gen9.meta in data file mounter 0000000141ab9e70.
+[     51250] [    GTAProcess]             MainThrd/ loading CARMODCOLS_GEN9_FILE resources:/qbx_customs/carmodcols_gen9.meta.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/qbx_customs/carmodcols_gen9.meta in data file mounter 0000000141ab9e70.
+[     51250] [    GTAProcess]             MainThrd/ loading AUDIO_WAVEPACK resources:/qbx_seatbelt/audiodirectory.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/qbx_seatbelt/audiodirectory in data file mounter 0000000141a43eb0.
+[     51250] [    GTAProcess]             MainThrd/ loading AUDIO_SOUNDDATA resources:/qbx_seatbelt/data/seatbelt_sounds.dat.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/qbx_seatbelt/data/seatbelt_sounds.dat in data file mounter 0000000141a42838.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_foodpack.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_foodpack.ytyp in data file mounter 00007fff58d72c58.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_prop_torch_fire001.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_prop_torch_fire001.ytyp in data file mounter 00007fff58d72c58.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/natty_props_lollipops.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/natty_props_lollipops.ytyp in data file mounter 00007fff58d72c58.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/scully_props.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/scully_props.ytyp in data file mounter 00007fff58d72c58.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/badges.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/badges.ytyp in data file mounter 00007fff58d72c58.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/lilflags_ytyp.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/lilflags_ytyp.ytyp in data file mounter 00007fff58d72c58.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/prideprops_ytyp.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/prideprops_ytyp.ytyp in data file mounter 00007fff58d72c58.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_food_icecream_pack.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_food_icecream_pack.ytyp in data file mounter 00007fff58d72c58.
+[     51250] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_effect_cigarpack.ytyp.
+[     51250] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_effect_cigarpack.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_murderpack.ytyp.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_murderpack.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_animal_fish002.ytyp.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_animal_fish002.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_food_dessert_a.ytyp.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_food_dessert_a.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_prop_give_gift.ytyp.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_prop_give_gift.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_package_pizzahut.ytyp.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_package_pizzahut.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/ultra_ringcase.ytyp.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/ultra_ringcase.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/bzzz_food_xmas22.ytyp.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/bzzz_food_xmas22.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/scully_emotemenu/pprp_icefishing.ytyp.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/scully_emotemenu/pprp_icefishing.ytyp in data file mounter 00007fff58d72c58.
+[     51265] [    GTAProcess]             MainThrd/ loading CFX_PSEUDO_CACHE scully_emotemenu.
+[     51265] [    GTAProcess]             MainThrd/ done loading scully_emotemenu in data file mounter 00007fff58d72b30.
+[     51265] [    GTAProcess]             MainThrd/ loading AUDIO_GAMEDATA resources:/ultra-voltlab/audiodata/dlchei4_game.dat.
+[     51265] [    GTAProcess]             MainThrd/ failed loading resources:/ultra-voltlab/audiodata/dlchei4_game.dat in data file mounter 0000000141a42838.
+[     51265] [    GTAProcess]             MainThrd/ loading AUDIO_SOUNDDATA resources:/ultra-voltlab/audiodata/dlchei4_sounds.dat.
+[     51265] [    GTAProcess]             MainThrd/ failed loading resources:/ultra-voltlab/audiodata/dlchei4_sounds.dat in data file mounter 0000000141a42838.
+[     51265] [    GTAProcess]             MainThrd/ loading AUDIO_WAVEPACK resources:/ultra-voltlab/dlc_hei4.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/ultra-voltlab/dlc_hei4 in data file mounter 0000000141a43eb0.
+[     51265] [    GTAProcess]             MainThrd/ loading AUDIO_WAVEPACK resources:/xt-prison/audiodirectory.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/xt-prison/audiodirectory in data file mounter 0000000141a43eb0.
+[     51265] [    GTAProcess]             MainThrd/ loading AUDIO_SOUNDDATA resources:/xt-prison/data/audioexample_sounds.dat.
+[     51265] [    GTAProcess]             MainThrd/ done loading resources:/xt-prison/data/audioexample_sounds.dat in data file mounter 0000000141a42838.
+[     51265] [    GTAProcess]             MainThrd/ loading DLC_ITYP_REQUEST resources:/pillbox/stream/v_int_40.ytyp.
+[     51281] [    GTAProcess]             MainThrd/ done loading resources:/pillbox/stream/v_int_40.ytyp in data file mounter 00007fff58d72c58.
+[     51281] [    GTAProcess]             MainThrd/ rage::gameSkeleton::RunInitFunctions: Done running INIT_SESSION init functions!
+[     51344] [    GTAProcess]             MainThrd/ ^2Game finished loading!
+[     51390] [    GTAProcess]             MainThrd/ HostState transitioning from HS_IDLE to HS_LOADED
+[     51422] [    GTAProcess]             MainThrd/ HostState transitioning from HS_LOADED to HS_START_HOSTING
+[     51531] [    GTAProcess]             MainThrd/ HostState transitioning from HS_START_HOSTING to HS_HOSTING
+[     51562] [    GTAProcess]             MainThrd/ HostState transitioning from HS_HOSTING to HS_HOSTING_NET_GAME
+[     52281] [    GTAProcess]             MainThrd/ HostState transitioning from HS_HOSTING_NET_GAME to HS_HOSTED
+[     52297] [    GTAProcess]             MainThrd/ Creating script environments for monitor
+[     52312] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52328] [    GTAProcess]             MainThrd/ Creating script environments for mapmanager
+[     52344] [    GTAProcess]             MainThrd/ Creating script environments for chat
+[     52359] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52375] [    GTAProcess]             MainThrd/ Creating script environments for spawnmanager
+[     52390] [    GTAProcess]             MainThrd/ Creating script environments for sessionmanager
+[     52390] [    GTAProcess]             MainThrd/ Creating script environments for baseevents
+[     52406] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52406] [    GTAProcess]             MainThrd/ Creating script environments for ox_lib
+[     52422] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52453] [    GTAProcess]             MainThrd/ Creating script environments for oxmysql
+[     52453] [    GTAProcess]             MainThrd/ Creating script environments for qbx_core
+[     52484] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52500] [    GTAProcess]             MainThrd/ Creating script environments for ox_target
+[     52515] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52531] [    GTAProcess]             MainThrd/ Creating script environments for ox_doorlock
+[     52547] [    GTAProcess]             MainThrd/ Creating script environments for ox_inventory
+[     52578] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52578] [    GTAProcess]             MainThrd/ Creating script environments for ox_fuel
+[     52594] [    GTAProcess]             MainThrd/ Creating script environments for qbx_adminmenu
+[     52625] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52625] [    GTAProcess]             MainThrd/ Creating script environments for qbx_medical
+[     52656] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52672] [    GTAProcess]             MainThrd/ Creating script environments for qbx_ambulancejob
+[     52687] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52703] [    GTAProcess]             MainThrd/ Creating script environments for qbx_bankrobbery
+[     52719] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52734] [    GTAProcess]             MainThrd/ Creating script environments for qbx_binoculars
+[     52750] [    GTAProcess]             MainThrd/ Creating script environments for qbx_busjob
+[     52750] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52781] [    GTAProcess]             MainThrd/ Creating script environments for qbx_carwash
+[     52797] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52812] [    GTAProcess]             MainThrd/ Creating script environments for qbx_chat_theme
+[     52828] [    GTAProcess]             MainThrd/ Creating script environments for qbx_cityhall
+[     52828] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52844] [    GTAProcess]             MainThrd/ Creating script environments for qbx_customs
+[     52859] [    GTAProcess]             MainThrd/ Creating script environments for qbx_density
+[     52875] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52875] [    GTAProcess]             MainThrd/ Creating script environments for qbx_divegear
+[     52890] [    GTAProcess]             MainThrd/ Creating script environments for qbx_diving
+[     52906] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52922] [    GTAProcess]             MainThrd/ Creating script environments for qbx_drugs
+[     52922] [    GTAProcess]             MainThrd/ Creating script environments for qbx_fireworks
+[     52937] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52953] [    GTAProcess]             MainThrd/ Creating script environments for qbx_garages
+[     52969] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     52984] [    GTAProcess]             MainThrd/ Creating script environments for qbx_garbagejob
+[     53000] [    GTAProcess]             MainThrd/ Creating script environments for qbx_houserobbery
+[     53000] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53015] [    GTAProcess]             MainThrd/ Creating script environments for qbx_hud
+[     53031] [    GTAProcess]             MainThrd/ Creating script environments for MugShotBase64
+[     53031] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53047] [    GTAProcess]             MainThrd/ Creating script environments for qbx_idcard
+[     53062] [    GTAProcess]             MainThrd/ Creating script environments for qbx_jewelery
+[     53078] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53078] [    GTAProcess]             MainThrd/ Creating script environments for qbx_lapraces
+[     53094] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53109] [    GTAProcess]             MainThrd/ Creating script environments for qbx_management
+[     53125] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53140] [    GTAProcess]             MainThrd/ Creating script environments for qbx_mechanicjob
+[     53156] [    GTAProcess]             MainThrd/ Creating script environments for qbx_newsjob
+[     53172] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53203] [    GTAProcess]             MainThrd/ Creating script environments for qbx_pawnshop
+[     53203] [    GTAProcess]             MainThrd/ Creating script environments for qbx_police
+[     53219] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53250] [    GTAProcess]             MainThrd/ Creating script environments for qbx_properties
+[     53265] [    GTAProcess]             MainThrd/ Creating script environments for qbx_radialmenu
+[     53281] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53281] [    GTAProcess]             MainThrd/ Creating script environments for qbx_recyclejob
+[     53297] [    GTAProcess]             MainThrd/ Creating script environments for qbx_scoreboard
+[     53297] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53312] [    GTAProcess]             MainThrd/ Creating script environments for qbx_scrapyard
+[     53328] [    GTAProcess]             MainThrd/ Creating script environments for qbx_seatbelt
+[     53328] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53359] [    GTAProcess]             MainThrd/ Creating script environments for qbx_smallresources
+[     53375] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53390] [    GTAProcess]             MainThrd/ Creating script environments for qbx_spawn
+[     53406] [    GTAProcess]             MainThrd/ Creating script environments for qbx_storerobbery
+[     53422] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53437] [    GTAProcess]             MainThrd/ Creating script environments for qbx_streetraces
+[     53437] [    GTAProcess]             MainThrd/ Creating script environments for qbx_taxijob
+[     53453] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53469] [    GTAProcess]             MainThrd/ Creating script environments for qbx_towjob
+[     53469] [    GTAProcess]             MainThrd/ Creating script environments for qbx_truckerjob
+[     53484] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53500] [    GTAProcess]             MainThrd/ Creating script environments for qbx_truckrobbery
+[     53515] [    GTAProcess]             MainThrd/ Creating script environments for qbx_vehiclekeys
+[     53531] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53547] [    GTAProcess]             MainThrd/ Creating script environments for qbx_vehiclesales
+[     53562] [    GTAProcess]             MainThrd/ Creating script environments for qbx_vehicleshop
+[     53594] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53609] [    GTAProcess]             MainThrd/ Creating script environments for qbx_vineyard
+[     53625] [    GTAProcess]             MainThrd/ Creating script environments for qbx_weed
+[     53625] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53640] [    GTAProcess]             MainThrd/ Creating script environments for Renewed-Banking
+[     53656] [    GTAProcess]             MainThrd/ Creating script environments for Renewed-Weathersync
+[     53672] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53672] [    GTAProcess]             MainThrd/ Creating script environments for bob74_ipl
+[     53719] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53734] [    GTAProcess]             MainThrd/ Creating script environments for illenium-appearance
+[     53781] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53797] [    GTAProcess]             MainThrd/ Creating script environments for loadscreen
+[     53797] [    GTAProcess]             MainThrd/ Creating script environments for mana_audio
+[     53812] [    GTAProcess]             MainThrd/ Creating script environments for mhacking
+[     53812] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53828] [    GTAProcess]             MainThrd/ Creating script environments for safecracker
+[     53859] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53859] [    GTAProcess]             MainThrd/ Creating script environments for screencapture
+[     53953] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     53969] [    GTAProcess]             MainThrd/ Creating script environments for scully_emotemenu
+[     54031] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     54047] [    GTAProcess]             MainThrd/ Creating script environments for ultra-voltlab
+[     54062] [    GTAProcess]             MainThrd/ Creating script environments for vehiclehandler
+[     54078] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     54094] [    GTAProcess]             MainThrd/ Creating script environments for xt-prison
+[     54109] [    GTAProcess]             MainThrd/ Creating script environments for pma-voice
+[     54125] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     54140] [    GTAProcess]             MainThrd/ Creating script environments for mm_radio
+[     54172] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     54187] [    GTAProcess]             MainThrd/ Creating script environments for pillbox
+[     54187] [    GTAProcess]             MainThrd/ Creating script environments for viccs_needs
+[     54187] [    GTAProcess]             MainThrd/ [VICCS_NEEDS] client/main.lua loaded
+[     54203] [    GTAProcess]             MainThrd/ [SimLife Needs]	Client main loaded
+[     54203] [    GTAProcess]             MainThrd/ [SimLife Needs]	Decay system loaded
+[     54203] [    GTAProcess]             MainThrd/ [SimLife Needs]	HUD integration loaded
+[     54203] [    GTAProcess]             MainThrd/ [VICCS_NEEDS] Loading client/vehicle.lua...
+[     54203] [    GTAProcess]             MainThrd/ [SimLife Needs]	Interactions module loaded
+[     54203] [    GTAProcess]             MainThrd/ Still executing script initialization routines...
+[     54219] [    GTAProcess]             MainThrd/ Creating script environments for viccs_phone
+[     54250] [    GTAProcess]             MainThrd/ Starting script initialization
+[     54250] [    GTAProcess]             MainThrd/ Dropping duplicate player for netID 1 (slotID 128).
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model sentinel5^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model banshee3^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model driftfuto2^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model woodlander^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model suzume^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model rapidgt4^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model polterminus^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model minimus^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model policeb2^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model l352^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model hardy^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model flatbed2^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model everon3^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model jester5^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model drifthardy^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model driftdominator10^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model cheetah3^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model maverick2^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model uranus^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model firebolt^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model titan2^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model duster2^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model youga5^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model freightcar3^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model driftl352^7
+[     54265] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model stockade4^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model driftchavosv6^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model polcoquette4^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model polcaracara^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model tampa4^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model cargobob5^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model driftgauntlet4^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model driftjester3^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model driftcheburek^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model chavosv6^7
+[     54281] [    GTAProcess]             MainThrd/ ^5[qbx_core] ^3[WARN] Could not find gameName value in vehicles.meta for vehicle model coquette6^7
+[     54281] [    GTAProcess]        CrBrowserMain/ TypeError: Cannot read properties of undefined (reading 'replace') (@chat/dist/chat.js:1)
+[     54344] [    GTAProcess]             MainThrd/ [VICCS_NEEDS] Vehicle HUD thread started
+[     54359] [    GTAProcess]             MainThrd/ Script initialization finished.
+[     54469] [    GTAProcess]             MainThrd/ [SimLife Needs]	HUD ready
+[     54562] [    GTAProcess]             MainThrd/ Returning device Fones de ouvido (HAYLOU S30) for GUID {29D5AFE7-6656-4EF4-BACC-A48B0BCEABBD}
+[     54640] [    GTAProcess]             MainThrd/ Connecting to mumble, setting targets.
+[     54640] [    GTAProcess] [Mumble] Audio Input/ Returning device Microfone (2- Fifine Microphone) for GUID {2575E33C-E5B6-483E-B1B1-58E15BBFBCE2}
+[     54656] [    GTAProcess] [Mumble] Audio Input/ MumbleAudioInput::InitializeAudioDevice: Initialized audio capture device.
+[     55203] [    GTAProcess]             MainThrd/ Finished connection logic
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	7	props for	tvs
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	8	props for	couches
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	8	props for	sinks
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	5	props for	urinals
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	9	props for	beds
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	4	props for	showers
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	4	props for	arcade_machines
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	2	props for	coffee_machines
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	8	props for	toilets
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Registered	6	props for	vending_machines
+[     55422] [    GTAProcess]             MainThrd/ [SimLife Needs]	Prop interactions initialized
+[     60625] [    GTAProcess]      UV loop: mumble/ UDP packets can be received. Switching to UDP mode.
+[     83062] [    GTAProcess]             MainThrd/ [SimLife Needs]	Client initialized with needs
+[     83078] [    GTAProcess]             MainThrd/ [SimLife Needs]	Synced	0	wants
+[     92547] [    GTAProcess]             MainThrd/ [Decay] Updated hunger: 66.39 -> 63.21
+[     92547] [    GTAProcess]             MainThrd/ [Decay] Updated thirst: 77.30 -> 74.63
+[     92547] [    GTAProcess]             MainThrd/ [Decay] Updated comfort: 74.54 -> 71.87
+[     92547] [    GTAProcess]             MainThrd/ [Decay] Updated bladder: 57.62 -> 53.81
+[     92547] [    GTAProcess]             MainThrd/ [Decay] Updated fun: 95.46 -> 94.12
+[     92547] [    GTAProcess]             MainThrd/ [Decay] Updated hygiene: 86.72 -> 85.83
+[     92547] [    GTAProcess]             MainThrd/ [Decay] Updated energy: 80.26 -> 78.92
+[     92547] [    GTAProcess]             MainThrd/ [Decay] Updated social: 75.76 -> 74.09
+[    102547] [    GTAProcess]             MainThrd/ [Decay] Updated hunger: 63.21 -> 62.37
+[    102547] [    GTAProcess]             MainThrd/ [Decay] Updated thirst: 74.63 -> 73.93
+[    102547] [    GTAProcess]             MainThrd/ [Decay] Updated comfort: 71.87 -> 71.17
+[    102547] [    GTAProcess]             MainThrd/ [Decay] Updated bladder: 53.81 -> 52.80
+[    102547] [    GTAProcess]             MainThrd/ [Decay] Updated fun: 94.12 -> 93.77
+[    102547] [    GTAProcess]             MainThrd/ [Decay] Updated hygiene: 85.83 -> 85.60
+[    102547] [    GTAProcess]             MainThrd/ [Decay] Updated energy: 78.92 -> 78.57
+[    102547] [    GTAProcess]             MainThrd/ [Decay] Updated social: 74.09 -> 73.65
+[    112344] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    112547] [    GTAProcess]             MainThrd/ [Decay] Updated hunger: 62.37 -> 61.54
+[    112547] [    GTAProcess]             MainThrd/ [Decay] Updated thirst: 73.93 -> 73.23
+[    112547] [    GTAProcess]             MainThrd/ [Decay] Updated comfort: 71.17 -> 70.47
+[    112547] [    GTAProcess]             MainThrd/ [Decay] Updated bladder: 52.80 -> 51.80
+[    112547] [    GTAProcess]             MainThrd/ [Decay] Updated fun: 93.77 -> 93.42
+[    112547] [    GTAProcess]             MainThrd/ [Decay] Updated hygiene: 85.60 -> 85.36
+[    112547] [    GTAProcess]             MainThrd/ [Decay] Updated energy: 78.57 -> 78.22
+[    112547] [    GTAProcess]             MainThrd/ [Decay] Updated social: 73.65 -> 73.21
+[    114406] [    GTAProcess]             MainThrd/ [Bridge] Synced Thirst from QBX:	77.30254
+[    119765] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    120500] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    120969] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    121219] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    121469] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    122562] [    GTAProcess]             MainThrd/ [Decay] Updated hunger: 61.54 -> 60.71
+[    122562] [    GTAProcess]             MainThrd/ [Decay] Updated thirst: 77.30 -> 76.60
+[    122562] [    GTAProcess]             MainThrd/ [Decay] Updated comfort: 70.47 -> 69.77
+[    122562] [    GTAProcess]             MainThrd/ [Decay] Updated bladder: 51.80 -> 50.80
+[    122562] [    GTAProcess]             MainThrd/ [Decay] Updated fun: 93.42 -> 93.07
+[    122562] [    GTAProcess]             MainThrd/ [Decay] Updated hygiene: 85.36 -> 85.13
+[    122562] [    GTAProcess]             MainThrd/ [Decay] Updated energy: 78.22 -> 77.87
+[    122562] [    GTAProcess]             MainThrd/ [Decay] Updated social: 73.21 -> 72.78
+[    123484] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    123672] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    123922] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    124109] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    124344] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    124531] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    124719] [    GTAProcess]        CrBrowserMain/ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'success') (@viccs_phone/web/dist/assets/index.js:277)
+[    132562] [    GTAProcess]             MainThrd/ [Decay] Updated hunger: 60.71 -> 59.89
+[    132562] [    GTAProcess]             MainThrd/ [Decay] Updated thirst: 76.60 -> 75.92
+[    132562] [    GTAProcess]             MainThrd/ [Decay] Updated comfort: 69.77 -> 68.79
+[    132562] [    GTAProcess]             MainThrd/ [Decay] Updated bladder: 50.80 -> 49.83
+[    132562] [    GTAProcess]             MainThrd/ [Decay] Updated fun: 93.07 -> 92.73
+[    132562] [    GTAProcess]             MainThrd/ [Decay] Updated hygiene: 85.13 -> 84.90
+[    132562] [    GTAProcess]             MainThrd/ [Decay] Updated energy: 77.87 -> 77.53
+[    132562] [    GTAProcess]             MainThrd/ [Decay] Updated social: 72.78 -> 72.35
+[    142562] [    GTAProcess]             MainThrd/ [Decay] Updated hunger: 59.89 -> 59.06
+[    142562] [    GTAProcess]             MainThrd/ [Decay] Updated thirst: 75.92 -> 75.22
+[    142562] [    GTAProcess]             MainThrd/ [Decay] Updated comfort: 68.79 -> 67.79
+[    142562] [    GTAProcess]             MainThrd/ [Decay] Updated bladder: 49.83 -> 48.83
+[    142562] [    GTAProcess]             MainThrd/ [Decay] Updated fun: 92.73 -> 92.38
+[    142562] [    GTAProcess]             MainThrd/ [Decay] Updated hygiene: 84.90 -> 84.67
+[    142562] [    GTAProcess]             MainThrd/ [Decay] Updated energy: 77.53 -> 77.18
+[    142562] [    GTAProcess]             MainThrd/ [Decay] Updated social: 72.35 -> 71.91

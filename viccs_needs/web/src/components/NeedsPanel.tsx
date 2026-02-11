@@ -6,7 +6,7 @@ import { NeedBar } from './NeedBar';
 const needsOrder = ['hunger', 'thirst', 'energy', 'hygiene', 'bladder', 'social', 'fun', 'comfort'];
 
 export function NeedsPanel() {
-    const { needs, config, visible, minimized, paused, stats } = useNeedsStore();
+    const { needs, config, visible, minimized, paused, stats, vehicle } = useNeedsStore();
 
     // Don't render if paused or not visible
     if (paused || !visible) return null;
@@ -33,7 +33,7 @@ export function NeedsPanel() {
                 }}
                 exit={{ opacity: 0, x: -50, scale: 0.9 }}
                 transition={springTransition}
-                className="fixed bottom-8 left-6 pointer-events-auto"
+                className={`fixed left-6 pointer-events-auto transition-all duration-500 ease-in-out ${vehicle.visible ? 'bottom-[250px]' : 'bottom-8'}`}
             >
                 {/* Liquid Glass Container */}
                 <div
