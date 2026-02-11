@@ -24,10 +24,15 @@ export const PhoneFrame: React.FC<PhoneFrameProps> = ({ children, isAppOpen = fa
                 animate={{ y: 0 }}
                 exit={{ y: '100%' }}
                 transition={{ type: "spring", damping: 20, stiffness: 100 }}
-                // REMOVED bg-black here. Kept border and shape. added bg-zinc-900/90 as extreme fallback if needed but goal is transparency
-                className="relative w-[400px] h-[830px] rounded-[60px] shadow-2xl overflow-hidden pointer-events-auto border-[6px] border-[#1a1a1a] ring-1 ring-white/20 bg-[#050505]"
+                // REMOVED bg-black here. Kept border and shape. Changed to bg-transparent for full transparency as requested.
+                // REMOVED shadow-2xl and inline boxShadow to fix dark square background artifact
+                className="relative w-[400px] h-[830px] rounded-[60px] overflow-hidden pointer-events-auto border-[6px] border-[#1a1a1a] ring-1 ring-white/20 bg-transparent"
                 style={{
-                    boxShadow: '0 0 0 2px #222, 0 25px 50px -12px rgba(0,0,0,0.7)'
+                    transform: 'translateZ(0)', // Force GPU layer to help with clipping
+                    isolation: 'isolate',
+                    backfaceVisibility: 'hidden',
+                    // HACK: Force overflow: hidden to work with border-radius + transform in Webkit
+                    WebkitMaskImage: '-webkit-radial-gradient(white, black)'
                 }}
             >
                 {/* 
